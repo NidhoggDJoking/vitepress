@@ -1,0 +1,16 @@
+{
+  "name": "VitePress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://toscode.gitee.com/NidhoggDJoking/VitePress.git",
+  "author": "Joking <250348426@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.35"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
