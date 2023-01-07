@@ -6,7 +6,12 @@
   "author": "Joking <250348426@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.35"
+    "markdown-it-anchor": "^8.6.4",
+    "vitepress": "^1.0.0-alpha.8",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "@docsearch/js": "^3.2.1"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",

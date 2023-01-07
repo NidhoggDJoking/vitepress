@@ -42,4 +42,4 @@ pnpm-debug.log*
 *.sw?
 
 
-docs/.vitepress
+docs/.vitepress/cache
