@@ -1,5 +1,9 @@
 // const anchor = require("markdown-it-anchor")
 
+const YEAR = new Date().getFullYear()
+const BASEURL = 'VitePress'
+const NAME = 'NidhoggDJoking'
+
 export default {
     // lang: 'en-US', // 默认为：en-US，<html lang="en-US">页面 HTML 中的标签
     title: "我是站点的标题", // 网站的标题。这将显示在导航栏中。也用作所有页面标题的后缀，除非titleTemplate已定义
@@ -19,14 +23,14 @@ export default {
     // 配置 Markdown 解析器
     markdown: {
       theme: "material-palenight",
-      lineNumbers: true // 代码块启用行号
-      // // 目录改成悬浮才显示文字
+      lineNumbers: true, // 代码块启用行号
+      // 目录改成悬浮才显示文字
       // anchor: {
       //   permalink: anchor.permalink.headerLink()
       // },
-      // // 展示目录的层次
+      // 展示目录的层次
       // toc: { level: [1,2,3] },
-      // // // 配置 Markdown-it 实例。
+      // 配置 Markdown-it 实例。
       // config: (md) => {
       //   md.use(require('markdown-it-anchor'))
       // }
@@ -38,12 +42,20 @@ export default {
       lastUpdatedText: "最近更新时间：", // 默认：Last updated,在上次更新时间之前显示的前缀文本
       // 编辑链接
       editLink: {
-        pattern: "https://github.com/git136975643/vitepress/edit/master/docs/:path",
-        text: "在 GitHub 上编辑此页面"
+        pattern: `https://gitee.com/${NAME}/${BASEURL}/edit/master/docs/:path`,
+        text: "在 Gitee 上编辑此页面"
       },
       // 社交链接 可以自定义icon
       socialLinks: [
-        { icon: "github", link: "https://github.com/git136975643/vitepress" }
+        { icon: "github", link: `https://gitee.com/${NAME}/${BASEURL}`},
+        // * You can also add custom icons by passing SVG as string:
+        // ? 您还可以通过将SVG作为字符串传递来添加自定义图标：
+        // {
+        //   icon: {
+        //     svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
+        //   },
+        //   link: '...'
+        // }
       ],
       // 可用于自定义出现在上一个和下一个链接上方的文本
       docFooter: {
@@ -53,9 +65,9 @@ export default {
       // 页脚 仅当页面不包含侧边栏时才会显示页脚。
       footer: {
         message: '在 MIT 许可下发布',
-        copyright: '版权所有 © 2022-forever dlf'
+        copyright: `Copyright (c) ${YEAR} ${NAME}`
       },
-      // // 碳广告 显示碳广告的选项。
+      // 碳广告 显示碳广告的选项。
       // carbonAds: {
       //   code: 'your-carbon-code',
       //   placement: 'your-carbon-placement'
@@ -111,4 +123,3 @@ export default {
       }
     }
   }
-  
