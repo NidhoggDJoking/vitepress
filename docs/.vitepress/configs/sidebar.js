@@ -1,7 +1,5 @@
 // 多个侧边栏方式sidebar写成对象
 export default {
-    // 当用户访问时guide显示此侧边栏
-    // 在 `guide` 目录下。
     "/guide/": [
         {
             text: "介绍",
@@ -24,7 +22,6 @@ export default {
             ]
         }
     ],
-    // 当用户访问时config显示此侧边栏
     "/config/": [
         {
             text: "配置",

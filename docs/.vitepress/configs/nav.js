@@ -5,7 +5,6 @@ export default [
         text: "配置",
         items: [
             {
-                // 区域标题
                 text: "常用配置",
                 items: [{ text: "主要配置", link: "/config/介绍" }]
             }
