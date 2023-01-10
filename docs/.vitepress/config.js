@@ -14,7 +14,7 @@ export default {
   head: [
     [
       "link",
-      { rel: "shortcut icon", href: "/VitePress/favicon.ico", type: "image/x-icon" }
+      { rel: "shortcut icon", href: "/VitePress/static/Pikachao.svg", type: "image/x-icon" }
     ] // 在HTML页面<head>里插入元素
   ],
   ignoreDeadLinks: true, // 默认值false,忽略死链接，不会因为死链接而导致构建失败
@@ -37,14 +37,14 @@ export default {
     // }
   },
   themeConfig: {
-    logo: "/logo.svg", //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
-    siteTitle: "VitePress", // 替换导航中的默认站点标题，就是logo旁边的标题
-    outlineTitle: "我是右侧大纲的标题", // 可用于自定义右侧边栏的标题（在大纲链接的顶部）
+    logo: "/static/Bird.svg", //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
+    siteTitle: "J-VitePress", // 替换导航中的默认站点标题，就是logo旁边的标题
+    outlineTitle: "On this page", // 可用于自定义右侧边栏的标题（在大纲链接的顶部）
     lastUpdatedText: "最近更新时间：", // 默认：Last updated,在上次更新时间之前显示的前缀文本
     // 编辑链接
     editLink: {
       pattern: `https://gitee.com/${NAME}/${BASEURL}/edit/master/docs/:path`,
-      text: "在 Gitee 上编辑此页面"
+      text: "在 Gitee/Github 上编辑此页面"
     },
     // 可用于自定义出现在上一个和下一个链接上方的文本
     docFooter: {

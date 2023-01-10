@@ -1,8 +1,8 @@
 ---
 layout: home
 
-title: VitePress(:100:)
-titleTemplate: Vite & Vue Powered Static Site Generator
+title: Vite & Vue Powered Static Site Generator
+titleTemplate: By NidhoggDJoking
 
 hero:
   name: VitePress
@@ -14,7 +14,10 @@ hero:
       link: /getting-started
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/git136975643/vitepress
+      link: https://github.com/NidhoggDJoking/VitePress
+    - theme: alt
+      text: Docsify 老文档
+      link: https://nidhoggdjoking.gitee.io/#/
 
 
 
