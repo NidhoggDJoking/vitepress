@@ -24,16 +24,19 @@
 - Push：用于将 `Gitee` 的仓库自动镜像到 `GitHub` 。
 - Pull：用于将 `GitHub` 的仓库镜像到 `Gitee` 。
 
+<br>
 
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
 
 - `StackBlitz` 直接操作 `GitHub` 触发仓库镜像功能再将操作同步至`Gitee`
 
-### 允许所有 StackBlitz 项目
+<br>
+
+### [项目在`StackBlitz`上运行](https://developer.stackblitz.com/platform/webcontainers/browser-config)
 
 要允许所有 StackBlitz 项目使用第三方 Cookie，请转到浏览器的 Cookie 首选项，并为以下 URL 模式添加例外：
 
-```bash
+```
 https://[*.]stackblitz.io
 https://[*.]local.webcontainer.io
 https://[*.]local-credentialless.webcontainer.io
