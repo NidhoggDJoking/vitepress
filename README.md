@@ -24,6 +24,8 @@
 - Push：用于将 `Gitee` 的仓库自动镜像到 `GitHub` 。
 - Pull：用于将 `GitHub` 的仓库镜像到 `Gitee` 。
 
+镜像同步的代码是不计入被同步仓库的贡献度
+
 <br>
 
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
@@ -36,9 +38,6 @@
 
 One of the ways to make your code example stand out in your docs or your repository's readme file is to use our CTA (call-to-action) buttons.
 
-```
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)
-```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github//NidhoggDJoking/VitePress)
 
