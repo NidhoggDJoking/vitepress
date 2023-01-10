@@ -32,6 +32,18 @@
 
 <br>
 
+### The “Open in StackBlitz” button
+
+One of the ways to make your code example stand out in your docs or your repository's readme file is to use our CTA (call-to-action) buttons.
+
+```
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)
+```
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github//NidhoggDJoking/VitePress)
+
+
+
 ### [项目在`StackBlitz`上运行](https://developer.stackblitz.com/platform/webcontainers/browser-config)
 
 要允许所有 StackBlitz 项目使用第三方 Cookie，请转到浏览器的 Cookie 首选项，并为以下 URL 模式添加例外：
@@ -42,3 +54,4 @@ https://[*.]local.webcontainer.io
 https://[*.]local-credentialless.webcontainer.io
 https://[*.]local-corp.webcontainer.io
 ```
+
