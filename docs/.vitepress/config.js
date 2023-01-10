@@ -54,7 +54,7 @@ export default {
     // 页脚 仅当页面不包含侧边栏时才会显示页脚。
     footer: {
       message: '在 MIT 许可下发布',
-      copyright: `Copyright (c) ${YEAR} ${NAME}`
+      copyright: `Copyright (c) ${YEAR}-present ${NAME}`
     },
     // 碳广告 显示碳广告的选项。
     // carbonAds: {
