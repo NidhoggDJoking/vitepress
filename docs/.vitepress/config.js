@@ -59,7 +59,7 @@ export default {
     algolia: {
       appId: 'SO2MMF1HZC',
       apiKey:'daa25d6a1618b680a3074f90e47b9236',
-      indexName: `${BASEURL}`
+      indexName: 'gitee_datasets'
     },
     // 碳广告 显示碳广告的选项。
     // carbonAds: {
