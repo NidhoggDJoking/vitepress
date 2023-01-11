@@ -56,6 +56,11 @@ export default {
       message: '在 MIT 许可下发布',
       copyright: `Copyright (c) ${YEAR}-present ${NAME}`
     },
+    algolia: {
+      appId: 'SO2MMF1HZC',
+      apiKey:'daa25d6a1618b680a3074f90e47b9236',
+      indexName: `${BASEURL}`
+    },
     // 碳广告 显示碳广告的选项。
     // carbonAds: {
     //   code: 'your-carbon-code',
