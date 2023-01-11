@@ -25,5 +25,12 @@
     "vite",
     "vue",
     "vitepress"
-  ]
+  ],
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
 }

@@ -7,14 +7,14 @@ import { BASEURL, NAME, YEAR } from './configs/global'
 
 export default {
   // lang: 'en-US', // 默认为：en-US，<html lang="en-US">页面 HTML 中的标签
-  title: "我是站点的标题", // 网站的标题。这将显示在导航栏中。也用作所有页面标题的后缀，除非titleTemplate已定义
+  title: "Nidhogg·D·Joking", // 网站的标题。这将显示在导航栏中。也用作所有页面标题的后缀，除非titleTemplate已定义
   // titleTemplate: 'lala', // 设置false为禁用该功能。标题的后缀。
   // description: "我是站点的描述元标记", // HTML页面<meta>的描述
   lastUpdated: true, // git commit的最后更新时间
   head: [
     [
       "link",
-      { rel: "shortcut icon", href: "/VitePress/static/Pikachao.svg", type: "image/x-icon" }
+      { rel: "shortcut icon", href: `favicon.ico`, type: "image/x-icon" }
     ] // 在HTML页面<head>里插入元素
   ],
   ignoreDeadLinks: true, // 默认值false,忽略死链接，不会因为死链接而导致构建失败
@@ -37,7 +37,7 @@ export default {
     // }
   },
   themeConfig: {
-    logo: "/static/Bird.svg", //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
+    logo: "/Bird.svg", //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
     siteTitle: "J-VitePress", // 替换导航中的默认站点标题，就是logo旁边的标题
     outlineTitle: "On this page", // 可用于自定义右侧边栏的标题（在大纲链接的顶部）
     lastUpdatedText: "最近更新时间：", // 默认：Last updated,在上次更新时间之前显示的前缀文本
