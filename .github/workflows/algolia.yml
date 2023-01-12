@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Get the content of algolia.json as config
+      - name: Get the content of crawlerConfig.json as config
         id: algolia_config
-        run: echo "::set-output name=config::$(cat crawlerConfig.json | jq -r tostring)"
+        run: echo "config::$(cat crawlerConfig.json | jq -r tostring) >> $GITHUB_OUTPUT"
       - name: Push indices to Algolia
         uses: signcl/docsearch-scraper-action@master
         env:
