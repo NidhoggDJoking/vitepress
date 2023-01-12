@@ -43,3 +43,6 @@ pnpm-debug.log*
 
 # 本地运行的临时缓存
 docs/.vitepress/cache
+
+# 打包文件
+docs/.vitepress/dist
