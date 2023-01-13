@@ -32,9 +32,20 @@ features:
   - title : 💋完全静态但仍然动态
     details: 使用真正的 SSG + SPA 架构疯狂。页面加载时静态，但从那里以 100% 的交互性吸引用户。
 ---
+
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  ::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
 }
 </style>

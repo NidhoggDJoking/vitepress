@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,a as e}from"./app.f1c8ced4.js";const f=JSON.parse('{"title":"Configuration","description":"","frontmatter":{},"headers":[],"relativePath":"guide/configuration.md","lastUpdated":null}'),o={name:"guide/configuration.md"},l=e("",8),t=[l];function p(i,r,c,d,u,y){return n(),a("div",null,t)}const D=s(o,[["render",p]]);export{f as __pageData,D as default};
