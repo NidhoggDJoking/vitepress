@@ -37,8 +37,8 @@ export default {
     // }
   },
   themeConfig: {
-    logo: '/Bird.svg', //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
-    siteTitle: 'J-VitePress', // 替换导航中的默认站点标题，就是logo旁边的标题
+    logo: '/Pikachu.svg', //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
+    siteTitle: 'Bohemian Rhapsody', // 替换导航中的默认站点标题，就是logo旁边的标题（Bohemian Rhapsody，）
     outlineTitle: 'On this page', // 可用于自定义右侧边栏的标题（在大纲链接的顶部）
     lastUpdatedText: '最近更新时间：', // 默认：Last updated,在上次更新时间之前显示的前缀文本
     // 编辑链接
