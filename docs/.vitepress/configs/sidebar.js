@@ -1,7 +1,8 @@
 // 多个侧边栏方式sidebar写成对象
 export default {
     '/guide/': sidebarGuide(),
-    '/config/': sidebarConfig()
+    '/config/': sidebarConfig(),
+    '/note/': sidebarNote()
     // "/guide/": [
     //     {
     //         text: "介绍",
@@ -105,5 +106,16 @@ function sidebarGuide() {
           { text: 'Frontmatter Configs', link: '/config/frontmatter-configs' }
         ]
       }
+    ]
+  }
+  function sidebarNote(){
+    return [
+      {
+        text: 'Note',
+        collapsible: true,
+        items: [
+          { text: 'VitePress', link: '/note/note' }
+        ]
+      },
     ]
   }
