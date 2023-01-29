@@ -109,5 +109,10 @@ function sidebarNote() {
       collapsible: true,
       items: [{ text: "介绍", link: "/note/introduce" }],
     },
+    {
+      text: "疑难杂症",
+      collapsible: true,
+      items: [{ text: "git", link: "/note/error/git" },{ text: "node", link: "/note/error/node" }],
+    },
   ];
 }
