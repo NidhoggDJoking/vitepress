@@ -16,3 +16,32 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'y
 mysql> FLUSH PRIVILEGES;
 mysql> quit
 ```
+
+### Access denied for user 'jokingnidhogg'@'localhost' (using password: NO)
+
+```sh
+$ cd /usr/local/mysql/bin
+$ mysql -u root -p
+Enter password: (enter your root password)
+
+mysql> select user from user;
++------------------+
+| user             |
++------------------+
+| jokingnidhogg    |
+| mysql.infoschema |
+| mysql.session    |
+| mysql.sys        |
+| root             |
++------------------+
+5 rows in set (0.00 sec)
+```
+
+```sh
+$ cd /usr/local/mysql/bin
+$ mysql -u jokingnidhogg -p
+
+Enter password: (enter your root password)
+
+mysql> 
+```
