@@ -1,1 +1,0 @@
-import{_ as e,o as s,c as a,b as n}from"./app.8721fb6a.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/error/git.md","lastUpdated":1675171625000}'),t={name:"note/error/git.md"},i=n("",5),o=[i];function r(c,p,l,d,_,h){return s(),a("div",null,o)}const g=e(t,[["render",r]]);export{m as __pageData,g as default};
