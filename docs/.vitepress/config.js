@@ -61,8 +61,9 @@ export default {
     algolia: {
       appId: 'SO2MMF1HZC',
       apiKey: '62b2fa4b766a59f92958ba894d57a6d9',
-      indexName: 'datasets',
-      chunkSize: 5000
+      indexName: 'vitepressalgolia',
+      placeholder: '请输入关键词',
+      buttonText: '搜索'
     },
     // 碳广告 显示碳广告的选项。
     // carbonAds: {
