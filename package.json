@@ -29,6 +29,9 @@
     "vue",
     "vitepress"
   ],
+  "bugs": {
+    "url": "https://github.com/NidhoggDJoking/vitepress/issues"
+  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

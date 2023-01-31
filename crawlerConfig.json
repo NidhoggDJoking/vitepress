@@ -1,6 +1,8 @@
 {
-"index_name": "datasets", // 填写自己的索引名称
-  "start_urls": ["https://nidhoggdjoking.github.io/vitepress/"], // 填写自己的网站地址
+  "index_name": "datasets",
+  "start_urls": [
+    "https://nidhoggdjoking.github.io/vitepress/"
+  ],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
@@ -22,4 +24,4 @@
     ".table-of-contents"
   ],
   "js_render": true
-  }
+}
