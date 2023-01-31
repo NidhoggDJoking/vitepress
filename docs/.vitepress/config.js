@@ -61,7 +61,7 @@ export default {
     algolia: {
       appId: 'SO2MMF1HZC',
       apiKey: '62b2fa4b766a59f92958ba894d57a6d9',
-      indexName: 'vitepressalgolia',
+      indexName: 'datasets',
       placeholder: '请输入关键词',
       buttonText: '搜索'
     },
