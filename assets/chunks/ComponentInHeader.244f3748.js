@@ -1,0 +1,1 @@
+import{_ as n,o,c as s,F as a,a as e}from"../app.590a6428.js";const t={},c=e("span",null,"在 Markdown 中导入组件",-1),r=e("span",null,"⚡",-1);function _(l,d){return o(),s(a,null,[c,r],64)}const m=n(t,[["render",_]]);export{m as C};
