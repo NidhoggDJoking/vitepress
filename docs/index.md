@@ -16,6 +16,9 @@ hero:
       text: 在 GitHub 上查看
       link: https://github.com/NidhoggDJoking/VitePress
     - theme: alt
+      text: 关于我
+      link: https://nidhoggdjoking.gitee.io/eternal/
+    - theme: alt
       text: Docsify 老文档
       link: https://nidhoggdjoking.gitee.io/#/
 
