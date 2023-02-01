@@ -30,6 +30,15 @@
 
 tip: `Gitee Pages`服务部署的路径是全小写的，而`Github Pages`生成地址与仓库名称相关区分大小写
 
+
+### 持续集成
+
+GitHub 使用的是`GitHub Actions`持续集成服务
+
+Gitee: [`Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具`](https://gitee.com/NidhoggDJoking/VitePress/gitee_go/welcome) ? 😰
+
+> Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务
+
 <br>
 
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
