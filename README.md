@@ -39,11 +39,6 @@ Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com
 
 > Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务 😰
 
-### [Dependabot 版本更新自动更新依赖项](https://docs.github.com/zh/code-security/dependabot/dependabot-version-updates)
-
-
-
-
 <br>
 
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
@@ -72,3 +67,20 @@ https://[*.]local-credentialless.webcontainer.io
 https://[*.]local-corp.webcontainer.io
 ```
 
+<br>
+
+### [Dependabot 版本更新自动更新依赖项](https://docs.github.com/zh/code-security/dependabot/dependabot-version-updates)
+
+> Dependabot version updates 可免费用于 GitHub.com 上的所有存储库。
+
+```yml
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: "npm level up"
+```
