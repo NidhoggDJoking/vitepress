@@ -2,6 +2,7 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# https://docs.github.com/zh/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
 updates:
@@ -9,6 +10,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
+    allow:
+      # Allow updates for Vue and any packages starting "vue"
+      - dependency-name: "vue*"
+      - dependency-name: "less"
     commit-message:
       # Prefix all commit messages with "npm"
-      prefix: "npm level up"
+      prefix: "npm version level up"
