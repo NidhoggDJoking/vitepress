@@ -14,7 +14,7 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
-    "@docsearch/js": "^3.2.1"
+    "@docsearch/js": "^3.3.2"
   },
   "scripts": {
     "dev": "vitepress dev docs",
