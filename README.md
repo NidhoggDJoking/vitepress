@@ -17,7 +17,7 @@
 ## [VitePress ](https://vitepress.docschina.org/)
 
 
-### [`Gitee`仓库镜像功能](https://gitee.com/help/articles/4336)
+### [Gitee镜像功能](https://gitee.com/help/articles/4336)
 
 目前已使用`Gitee`所支持设置的两种镜像：
 
@@ -29,6 +29,15 @@
 当`Gitee`不再免费使用镜像同步功能将采取`Github Actions`实现代码推送`Github`自动同步到`Gitee`镜像仓库！
 
 tip: `Gitee Pages`服务部署的路径是全小写的，而`Github Pages`生成地址与仓库名称相关区分大小写
+
+
+### 持续集成
+
+GitHub 使用的是`GitHub Actions`持续集成服务
+
+Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com/NidhoggDJoking/VitePress/gitee_go/welcome) 我采取本地走脚本的方式
+
+> Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务 😰
 
 <br>
 
@@ -58,3 +67,20 @@ https://[*.]local-credentialless.webcontainer.io
 https://[*.]local-corp.webcontainer.io
 ```
 
+<br>
+
+### [Dependabot 版本更新自动更新依赖项](https://docs.github.com/zh/code-security/dependabot/dependabot-version-updates)
+
+> Dependabot version updates 可免费用于 GitHub.com 上的所有存储库。
+
+```yml
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: "npm level up"
+```

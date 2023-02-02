@@ -1,16 +1,13 @@
 // const anchor = require("markdown-it-anchor")
-
 import nav from './configs/nav';
 import sidebar from './configs/sidebar';
 import socialLinks from './configs/socialLinks';
 import { BASEURL, NAME, YEAR } from './configs/global';
 
-
-
 export default {
   // lang: 'en-US', // 默认为：en-US，<html lang="en-US">页面 HTML 中的标签
   title: 'By NidhoggDJoking', // 网站的标题。这将显示在导航栏中。也用作所有页面标题的后缀，除非titleTemplate已定义
-  // titleTemplate: 'lala', // 设置false为禁用该功能。标题的后缀。
+  // titleTemplate: '', // 设置false为禁用该功能。标题的后缀。
   // description: "我是站点的描述元标记", // HTML页面<meta>的描述
   lastUpdated: true, // git commit的最后更新时间
   head: [
@@ -62,7 +59,8 @@ export default {
       appId: 'SO2MMF1HZC',
       apiKey: '62b2fa4b766a59f92958ba894d57a6d9',
       indexName: 'datasets',
-      chunkSize: 5000
+      placeholder: '请输入关键词',
+      buttonText: '搜索'
     },
     // 碳广告 显示碳广告的选项。
     // carbonAds: {
