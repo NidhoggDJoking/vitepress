@@ -1,5 +1,5 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
-import './global.css'
+import './global.less'
 
 export default DefaultTheme
