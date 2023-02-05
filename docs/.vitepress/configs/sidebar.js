@@ -114,5 +114,10 @@ function sidebarNote() {
       collapsible: true,
       items: [{ text: "git", link: "/note/error/git" },{ text: "node", link: "/note/error/node" }],
     },
+    {
+      text: "文章",
+      collapsible: true,
+      items: [{ text: "javascript-questions", link: "/note/javascript-questions" }],
+    },
   ];
 }
