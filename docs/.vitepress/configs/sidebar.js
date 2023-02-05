@@ -85,6 +85,22 @@ function sidebarNote() {
       items: [{ text: "VitePress", link: "/note/note" }],
     },
     {
+      text: "疑难杂症",
+      collapsible: true,
+      items: [
+        { text: "git", link: "/note/error/git" },
+        { text: "node", link: "/note/error/node" },
+      ],
+    },
+    {
+      text: "文章",
+      collapsible: true,
+      items: [
+        { text: "javascript-questions", link: "/note/javascript-questions" },
+        { text: "emoji-list", link: "/note/emoji-list" },
+      ],
+    },
+    {
       text: "介绍",
       collapsible: true,
       items: [
@@ -108,16 +124,6 @@ function sidebarNote() {
       text: "配置",
       collapsible: true,
       items: [{ text: "介绍", link: "/note/introduce" }],
-    },
-    {
-      text: "疑难杂症",
-      collapsible: true,
-      items: [{ text: "git", link: "/note/error/git" },{ text: "node", link: "/note/error/node" }],
-    },
-    {
-      text: "文章",
-      collapsible: true,
-      items: [{ text: "javascript-questions", link: "/note/javascript-questions" }],
     },
   ];
 }
