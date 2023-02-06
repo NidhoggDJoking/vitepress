@@ -19,7 +19,7 @@ function sidebarGuide() {
       ],
     },
     {
-      text: "Writing",
+      text: "✒️ Writing",
       collapsible: true,
       items: [
         { text: "Markdown", link: "/guide/markdown" },
@@ -30,7 +30,7 @@ function sidebarGuide() {
       ],
     },
     {
-      text: "Theme",
+      text: "🎨 Theme",
       collapsible: true,
       items: [
         { text: "Introduction", link: "/guide/theme-introduction" },
@@ -97,7 +97,7 @@ function sidebarNote() {
       text: "文章",
       collapsible: true,
       items: [
-        { text: "javascript-questions", link: "/note/javascript-questions" },
+        { text: "💯 javascript-questions", link: "/note/javascript-questions" },
       ],
     },
     {

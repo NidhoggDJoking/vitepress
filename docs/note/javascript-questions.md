@@ -1,6 +1,6 @@
 # JavaScript 进阶问题列表
 
- [Instagram](https://www.instagram.com/theavocoder) 上每天都会发布 JavaScript 的多选问题
+ [JavaScript Questions](https://github.com/lydiahallie/javascript-questions) 上每天都会发布 JavaScript 的多选问题
 
 从基础到进阶，测试你有多了解 JavaScript，刷新你的知识，或者帮助你的 coding 面试！
 :muscle: :rocket: 我每周都会在这个仓库下更新新的问题。
