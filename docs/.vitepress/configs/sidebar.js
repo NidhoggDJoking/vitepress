@@ -86,7 +86,7 @@ function sidebarNote() {
       items: [{ text: "VitePress", link: "/note/note" }],
     },
     {
-      text: "疑难杂症",
+      text: "Questions",
       collapsible: true,
       items: [
         { text: "git", link: "/note/error/git" },
@@ -134,7 +134,7 @@ function sidebarTools() {
       text: "Tools",
       items: [
         { text: "emoji-list", link: "/tools/emoji-list" },
-        { text: "javascript-regular", link: "/tools/javascript-regular" },
+        { text: "Javascript Regular", link: "/tools/javascript-regular" },
       ]
     }
   ];
