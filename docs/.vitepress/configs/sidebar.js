@@ -94,10 +94,10 @@ function sidebarNote() {
       ],
     },
     {
-      text: "文章",
+      text: "Article",
       collapsible: true,
       items: [
-        { text: "💯 javascript-questions", link: "/note/javascript-questions" },
+        { text: "💯 JavaScript Questions", link: "/note/javascript-questions" },
       ],
     },
     {
@@ -133,8 +133,8 @@ function sidebarTools() {
     {
       text: "Tools",
       items: [
-        { text: "emoji-list", link: "/note/emoji-list" },
-        { text: "javascript-regular", link: "/note/javascript-regular" },
+        { text: "emoji-list", link: "/tools/emoji-list" },
+        { text: "javascript-regular", link: "/tools/javascript-regular" },
       ]
     }
   ];
