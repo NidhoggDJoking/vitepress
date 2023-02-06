@@ -56,60 +56,6 @@ export function validURL(url) {
 }
 ```
 
-```js
-/**
- * 获取随机码
- * @returns {string}
- */
-export function getRandomId(num) {
-    var s = [];
-    var n = num || 6
-    var hexDigits = "0123456789abcdefhijklmnopqrstuvwxyz";
-    for (var i = 0; i < n; i++) {
-        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
-    }
-    var uuid = s.join("");
-    return uuid;
-}
-```
-
-
-```js
-export const debounce = (func, wait = 50) => {
-    let timeout
-    return function() {
-    const context = this
-    const args = arguments
-    if (timeout) clearTimeout(timeout)
-       timeout = setTimeout(() => {
-      func.apply(context, args)
-    }, wait)
-  }
-}
-```
-
-```js
-/**
- * @description  节流: 无论调用多少次,最快只能是设定的时间触发一次
- * @export
- * @param {Function} func 需要节流的方法
- * @param {Number} wait 设定时间
- * @returns {Function} 包装的方法
- */
-
-export const throttle = (func, wait = 50) => {
-    let last = 0
-    return function() {
-    const now = +new Date()
-    if (now - last > wait) {
-      last = now
-      return func.apply(this, Array.from(arguments))
-    } else {
-      return false
-    }
-  }
-}
-```
 
 ```js
 /**
@@ -118,5 +64,33 @@ export const throttle = (func, wait = 50) => {
  */
 export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
+}
+```
+
+```js
+export function email(rule, value, callback) {
+    value = value.trim()
+    if (!value) {
+        callback()
+    } else {
+        if(!/^[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?$/.test(value)) {
+            callback(new Error(`邮箱格式不正确`))
+        }else{
+            callback()
+        }
+    }
+}
+```
+
+
+```js
+export function password (rule, value, callback) {
+    if (!/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*((?=[\x21-\x7e]+)[^A-Za-z0-9]){1,}).{1,}$/.test(value)){
+        callback(new Error('必须包含大小写字母+数字+特殊字符'))
+    } else if (value.length < 8 || value.length > 20){
+        callback(`长度在${ 8 }到${ 20 }个字符`)
+    }else {
+        callback()
+    }
 }
 ```
