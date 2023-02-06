@@ -3,6 +3,7 @@ export default {
   "/guide/": sidebarGuide(),
   "/config/": sidebarConfig(),
   "/note/": sidebarNote(),
+  "/tools": sidebarTools(),
 };
 
 function sidebarGuide() {
@@ -97,7 +98,6 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "javascript-questions", link: "/note/javascript-questions" },
-        { text: "emoji-list", link: "/note/emoji-list" },
       ],
     },
     {
@@ -125,5 +125,17 @@ function sidebarNote() {
       collapsible: true,
       items: [{ text: "介绍", link: "/note/introduce" }],
     },
+  ];
+}
+
+function sidebarTools() {
+  return [
+    {
+      text: "Tools",
+      items: [
+        { text: "emoji-list", link: "/note/emoji-list" },
+        { text: "javascript-regular", link: "/note/javascript-regular" },
+      ]
+    }
   ];
 }
