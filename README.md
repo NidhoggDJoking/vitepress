@@ -26,7 +26,7 @@
 
 镜像同步的代码是不计入被同步仓库的贡献度
 
-当`Gitee`不再免费使用镜像同步功能将采取`Github Actions`实现代码推送`Github`自动同步到`Gitee`镜像仓库！
+当`Gitee`不再免费使用镜像同步功能将采取`Github Actions`实现代码推送`Github`自动同步到`Gitee`镜像仓库！`/script/sync-gitee.yml`
 
 tip: `Gitee Pages`服务部署的路径是全小写的，而`Github Pages`生成地址与仓库名称相关区分大小写
 
