@@ -1,6 +1,5 @@
 name: Deploy
-env:
-  CRAWLER: false
+
 on:
   push:
     branches:
@@ -39,6 +38,7 @@ jobs:
         - name: Push indices to Algolia
           uses: signcl/docsearch-scraper-action@master
           env:
+            CRAWLER: false
             APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
             API_KEY: ${{ secrets.API_KEY }}
             CONFIG: ${{ steps.algolia_config.outputs.config }}
