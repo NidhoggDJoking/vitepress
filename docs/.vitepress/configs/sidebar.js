@@ -108,23 +108,6 @@ function sidebarNote() {
         { text: "配置和部署", link: "/note/configuration" },
       ],
     },
-    {
-      text: "写作",
-      collapsible: true,
-      items: [
-        { text: "markdown扩展", link: "/note/markdown" },
-        {
-          text: "在 Markdown 中使用 Vue",
-          link: "/note/markdown-vue.md",
-        },
-        { text: "API 参考", link: "/note/api" },
-      ],
-    },
-    {
-      text: "配置",
-      collapsible: true,
-      items: [{ text: "介绍", link: "/note/introduce" }],
-    },
   ];
 }
 
