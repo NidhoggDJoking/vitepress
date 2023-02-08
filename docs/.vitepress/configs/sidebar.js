@@ -83,7 +83,10 @@ function sidebarNote() {
     {
       text: "Note",
       collapsible: true,
-      items: [{ text: "VitePress", link: "/note/note" }],
+      items: [
+        { text: "VitePress", link: "/note/note" },
+        { text: "POSIX cron", link: "/note/posix-cron" }
+      ],
     },
     {
       text: "Questions",
@@ -105,7 +108,6 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "什么是 VitePress？", link: "/note/vitepress" },
-        { text: "配置和部署", link: "/note/configuration" },
       ],
     },
   ];
