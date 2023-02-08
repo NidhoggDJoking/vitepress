@@ -82,13 +82,29 @@ mysql>
 
 [MySQL 版本的不同，执行命令有所差异](https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html)
 
-```sh
+<!-- ```sh
 MySQL 5.7.6 and later:
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
 
 MySQL 5.7.5 and earlier:
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
+``` -->
+
+::: code-group
+
+```sh [MySQL 5.7.6 and later]
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
+
+export default config
 ```
+
+```sh [MySQL 5.7.5 and earlier]
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
+```
+
+:::
+
+
 
 重启服务
 
