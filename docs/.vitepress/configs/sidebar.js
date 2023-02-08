@@ -92,8 +92,7 @@ function sidebarNote() {
       text: "Questions",
       collapsible: true,
       items: [
-        { text: "git", link: "/note/error/git" },
-        { text: "node", link: "/note/error/node" },
+        { text: "Error", link: "/note/error" },
       ],
     },
     {

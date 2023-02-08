@@ -1,4 +1,6 @@
-## POSIX cron 语法
+# POSIX cron 语法
+
+## 结构
 
 ```
 ┌───────────── minute (0 - 59)
@@ -12,6 +14,7 @@
 * * * * *
 ```
 
+## 运算符说明
 
 |   运算符  |   说明    |	示例    |
 | :---------: |:----------:| :-----:|
@@ -21,10 +24,8 @@
 |   /	|   步骤值  |	`20/15 * * * * `在第 20 分钟到第 59 分钟每隔 15 分钟运行一次（第 20、35 和 50 分)|
 
 
-可以使用 [crontab guru](https://crontab.guru/) 帮助生成 cron 语法并确认其运行时间。
+可以使用 [crontab guru](https://crontab.guru/) 帮助生成 cron 语法并确认其运行时间。<br>
 为了帮助入门，我们还提供了 [crontab guru 示例](https://crontab.guru/examples.html) 示例列表。
-
-
 
 
 
