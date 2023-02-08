@@ -23,3 +23,13 @@
 
 可以使用 [crontab guru](https://crontab.guru/) 帮助生成 cron 语法并确认其运行时间。
 为了帮助入门，我们还提供了 [crontab guru 示例](https://crontab.guru/examples.html) 示例列表。
+
+
+
+
+
+<style scoped>
+.vp-doc th:first-of-type {
+   width: 100px;
+}
+</style>
