@@ -283,6 +283,8 @@ export default {
 
 A [list of valid languages](https://github.com/shikijs/shiki/blob/main/docs/languages.md) is available on Shiki's repository.
 
+::: details A list of valid languages 
+
 ```js
 export type Lang =
   | 'abap'
@@ -313,7 +315,7 @@ export type Lang =
   | 'cpp'
   | 'crystal'
   | 'csharp' | 'c#' | 'cs'
-  | 'css'
+  | 'css' | 'sass' | 'less'
   | 'cue'
   | 'd'
   | 'dart'
@@ -359,7 +361,6 @@ export type Lang =
   | 'kotlin'
   | 'kusto' | 'kql'
   | 'latex'
-  | 'less'
   | 'liquid'
   | 'lisp'
   | 'logo'
@@ -399,7 +400,6 @@ export type Lang =
   | 'ruby' | 'rb'
   | 'rust' | 'rs'
   | 'sas'
-  | 'sass'
   | 'scala'
   | 'scheme'
   | 'scss'
@@ -438,6 +438,7 @@ export type Lang =
   | 'yaml' | 'yml'
   | 'zenscript'
 ```
+:::
 
 You may also customize syntax highlight theme in app config. Please see [`markdown` options](../config/app-configs#markdown) for more details.
 
