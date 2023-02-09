@@ -1,3 +1,6 @@
+# 疑难杂症
+
+
 ### MYSQL的版本为8.0+的时候 ， 用NODEJS查询数据库报错:
 
 ```sh
@@ -16,7 +19,10 @@ mysql> FLUSH PRIVILEGES;
 mysql> quit
 ```
 
-### Access denied for user 'XX'@'localhost' (using password: NO)
+::: warning
+Access denied for user 'XX'@'localhost' (using password: NO)
+:::
+### 
 
 ```sh
 $ cd /usr/local/mysql/bin
@@ -56,7 +62,7 @@ net stop mysql
 ```
 
 
-```sh
+```sh{15,18}
 NidhoggDJokingdeMacBook-Pro:~ joking$ cd /usr/local/mysql/bin/ 
 NidhoggDJokingdeMacBook-Pro:bin joking$ ./mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -98,7 +104,6 @@ SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
 
 ```sh [MySQL 5.7.6 and later]
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
-
 ```
 :::
 

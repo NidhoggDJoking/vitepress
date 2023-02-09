@@ -1,6 +1,4 @@
-# emoji-list
-
-
+# Emoji list
 
 ## People
 
