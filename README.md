@@ -17,8 +17,6 @@
   🔥 <a href="https://github.dev/NidhoggDJoking/vitepress">Edit on Vscode</a>
   &nbsp;
   ⚡️ <a href="https://stackblitz.com/edit/jvitepress">Edit on StackBlitz</a>
-  &nbsp;
-  🇨🇳 <a href="./README.md">中文介绍</a>
 </p>
 
 ## [VitePress ](https://vitepress.docschina.org/)
@@ -45,6 +43,26 @@ GitHub 使用的是`GitHub Actions`持续集成服务
 Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com/NidhoggDJoking/VitePress/gitee_go/welcome) 我采取本地走脚本的方式
 
 > Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务 😰
+
+Algolia 爬虫于每周五3点开始
+
+```sh
+name: Algolia
+on:
+  schedule:
+    - cron:  '0 3 * * 5'
+```
+
+推送`master`分支后自动部署
+
+```sh
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+```
+
 
 <br>
 

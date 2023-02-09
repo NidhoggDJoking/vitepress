@@ -92,16 +92,14 @@ SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
 
 ::: code-group
 
-```sh [MySQL 5.7.6 and later]
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
-
-export default config
-```
-
 ```sh [MySQL 5.7.5 and earlier]
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
 ```
 
+```sh [MySQL 5.7.6 and later]
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
+
+```
 :::
 
 
