@@ -22,7 +22,7 @@
 ## [VitePress ](https://vitepress.docschina.org/)
 
 
-### [Gitee镜像功能](https://gitee.com/help/articles/4336)
+### [镜像功能](https://gitee.com/help/articles/4336)
 
 目前已使用`Gitee`所支持设置的两种镜像：
 
@@ -44,14 +44,6 @@ Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com
 
 > Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务 😰
 
-Algolia 爬虫于每周五3点开始
-
-```sh
-name: Algolia
-on:
-  schedule:
-    - cron:  '0 3 * * 5'
-```
 
 推送`master`分支后自动部署
 
@@ -62,6 +54,22 @@ on:
     branches:
       - master
 ```
+
+`Algolia` 爬虫于每周五3点开始
+
+```sh
+name: Algolia
+on:
+  schedule:
+    - cron:  '0 3 * * 5'
+```
+
+`Algolia` 免费版存在限制不能每次推送都使用否则
+
+Github Action Error: Crawling issue: nbHits 0 for `XXX`
+
+> 原因：You have exceeded your Free app's 10,000 Record limit. You can delete records or indices, or upgrade at any time for increased capacity.
+
 
 
 <br>
