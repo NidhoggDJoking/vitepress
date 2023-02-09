@@ -24,8 +24,8 @@ Note that you should reference files placed in `public` using root absolute path
 
 There is one exception to this: if you have an HTML page in `public` and link to it from the main site, the router will yield a 404 by default. To get around this, VitePress provides a `pathname://` protocol which allows you to link to another page in the same domain as if the link is external. Contrast these two links:
 
-- [/pure.html](/pure.html)
-- <pathname:///pure.html>
+- [/note/note.html](/note/note.html)
+- <pathname:///JSvelte>
 
 ## Base URL
 
