@@ -85,7 +85,8 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "VitePress", link: "/note/note" },
-        { text: "POSIX cron", link: "/note/posix-cron" }
+        { text: "POSIX cron", link: "/note/posix-cron" },
+        { text: "Shell", link: "/note/shell" },
       ],
     },
     {
