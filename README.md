@@ -67,6 +67,12 @@ Github Action Error: Crawling issue: nbHits 0 for `XXX`
 
 > 原因：You have exceeded your Free app's 10,000 Record limit. You can delete records or indices, or upgrade at any time for increased capacity.
 
+tip:`Schedule`在 GitHub 操作工作流运行的高负载期间，事件可能会延迟。高负载时间包括每小时开始。为了减少延迟的可能性，请安排您的工作流在不同的时间运行。
+
+所以`Schedule`设置的 cron 时刻，仅仅是工作流进行计划排队的时刻，而不是准确的运行时刻。而且上述时间均为UTC标准时间，不是北京时间。
+
+如果需要换算成北京时间，要在该cron的基础上增加八小时得到北京时间
+
 
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
 
