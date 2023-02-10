@@ -184,3 +184,17 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
 ```
 
 `..` 相当于返回上层
+
+
+
+```js
+const fs = require('fs')
+const packageJSON = require('./package.json')
+const { name: projectName } = packageJSON
+fs.readFile('./public/index.html', 'utf-8', (err, data) => {
+  if (!err && data) {
+    const newHtml = data.replace('<title>project_name', projectName)
+    fs.writeFile('./public/index.html', newHtml, () => {})
+  }
+})
+```
