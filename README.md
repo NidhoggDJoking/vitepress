@@ -1,4 +1,4 @@
-<h1 align="center">VitePress</h1>
+<h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">VitePress</a></h1>
 
 <p align="center">
   <a href="https://vitejs.cn/" target="_blank">
@@ -14,12 +14,10 @@
 
 
 <p align="center">
-  🔥 <a href="https://github.dev/NidhoggDJoking/vitepress">Edit on Vscode</a>
+  🔥 <a href="https://github.dev/NidhoggDJoking/vitepress" target="_blank">Edit on Vscode</a>
   &nbsp;
-  ⚡️ <a href="https://stackblitz.com/edit/jvitepress">Edit on StackBlitz</a>
+  ⚡️ <a href="https://stackblitz.com/edit/jvitepress" target="_blank">Edit on StackBlitz</a>
 </p>
-
-## [VitePress ](https://vitepress.docschina.org/)
 
 
 ### [镜像功能](https://gitee.com/help/articles/4336)
@@ -43,7 +41,6 @@ GitHub 使用的是`GitHub Actions`持续集成服务
 Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com/NidhoggDJoking/VitePress/gitee_go/welcome) 我采取本地走脚本的方式
 
 > Gitee Go 为增值服务，计费方式为预付费，按构建时长购买。付费企业套餐资费不包含 Gitee Go 等增值服务 😰
-
 
 推送`master`分支后自动部署
 
@@ -71,14 +68,10 @@ Github Action Error: Crawling issue: nbHits 0 for `XXX`
 > 原因：You have exceeded your Free app's 10,000 Record limit. You can delete records or indices, or upgrade at any time for increased capacity.
 
 
-
-<br>
-
 ### [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/jvitepress)
 
 - `StackBlitz` 直接操作 `GitHub` 触发仓库镜像功能再将操作同步至`Gitee`
 
-<br>
 
 ### The “Open in StackBlitz” button
 
@@ -86,7 +79,6 @@ One of the ways to make your code example stand out in your docs or your reposit
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github//NidhoggDJoking/VitePress)
-
 
 
 ### [项目在`StackBlitz`上运行](https://developer.stackblitz.com/platform/webcontainers/browser-config)
