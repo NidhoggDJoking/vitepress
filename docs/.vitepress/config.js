@@ -22,7 +22,8 @@ export default {
   // outDir: "../public",   // 默认值为'./.vitepress/dist' 构建输出位置
   // 配置 Markdown 解析器
   markdown: {
-    theme: 'material-palenight',
+    // 踩坑: 不看源码不知道 0.35 `material-palenight` 0.45 `material-theme-palenight`
+    theme: 'material-theme-palenight',
     lineNumbers: true, // 代码块启用行号
     // 目录改成悬浮才显示文字
     // anchor: {
@@ -62,7 +63,8 @@ export default {
       placeholder: '请输入关键词',
       buttonText: '搜索'
     },
-    // 碳广告 显示碳广告的选项。
+    returnToTopLabel: '火箭升空🚀',
+    // 碳广告 显示碳广告的选项。需要网站月访问量到达10000次才能申请成功
     // carbonAds: {
     //   code: 'your-carbon-code',
     //   placement: 'your-carbon-placement'

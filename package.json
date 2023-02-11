@@ -10,8 +10,8 @@
     "less": "^4.1.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4",
-    "vitepress": "^1.0.0-alpha.35",
-    "vue": "^3.2.37"
+    "vitepress": "^1.0.0-alpha.45",
+    "vue": "^3.2.47"
   },
   "dependencies": {
     "@docsearch/js": "^3.2.1"
