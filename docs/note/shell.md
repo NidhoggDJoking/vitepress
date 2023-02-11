@@ -64,11 +64,6 @@ echo $myUrl
 
 ## 流程控制
 
-
-::: 注意
-与 JavaScript、PHP 等语言不一样，sh 的流程控制不可为空.
-:::
-
 ```php
 <?php
 if (isset($_GET["myUrl"])) {
@@ -79,7 +74,11 @@ else {
 }
 ```
 
-在 sh/bash 里可不能这么写，如果 else 分支没有语句执行，就不要写这个 else。
+::: warning 注意
+与 JavaScript、PHP 等语言不一样，sh 的流程控制不可为空.
+:::
+
+在 `sh/bash` 里可不能这么写，如果 `else` 分支没有语句执行，就不要写这个 `else`。
 
 
 ### if 语句语法格式
@@ -110,16 +109,16 @@ if (( a > b )); then
 fi
 ```
 
-- 大于 -gt (greater than)
-- 小于 -lt (less than)
-- 大于或等于 -ge (greater than or equal)
-- 小于或等于 -le (less than or equal)
-- 不相等 -ne （not equal）
-- 相等 -eq （equal）
+- 大于 `-gt`  ( greater than )
+- 小于 `-lt`  ( less than )
+- 大于或等于 `-ge`  ( greater than or equal )
+- 小于或等于 `-le`  ( less than or equal )
+- 不相等 `-ne`  ( not equal )
+- 相等 `-eq`  ( equal )
 
 
-::: 注意
-`Shell` 是没有 `===` 那是`JavaScript`的.
+::: warning 注意
+Shell 是没有 '===' 那是 JavaScript 别搞混了.
 :::
 
 ```sh
@@ -252,34 +251,25 @@ done
 
 无限循环
 
-
-```sh
-while :
-do
-    command
-done
-```
-
-
 ::: code-group
 
-```sh [方法一]
+```sh [无限循环一]
 while :
 do
     command
 done
 ```
 
-```sh [方法二]
+```sh [无限循环二]
 while true
 do
     command
 done
 ```
 
-```sh [方法三]
-
+```sh [无限循环三]
 for (( ; ; ))
+
 
 
 ```
