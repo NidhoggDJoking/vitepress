@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,b as e}from"./app.abb1b56d.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/error/git.md","lastUpdated":1675755974000}'),l={name:"note/error/git.md"},p=e("",7),o=[p];function t(c,r,i,d,C,y){return n(),a("div",null,o)}const b=s(l,[["render",t]]);export{u as __pageData,b as default};
