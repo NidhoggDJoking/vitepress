@@ -1,77 +1,9 @@
 # JavaScript 工具方法
 
-
-```js
-/**
- * 获取随机码
- * @returns {string}
- */
-export function getRandomId(num) {
-    var s = [];
-    var n = num || 6
-    var hexDigits = "0123456789abcdefhijklmnopqrstuvwxyz";
-    for (var i = 0; i < n; i++) {
-        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
-    }
-    var uuid = s.join("");
-    return uuid;
-}
-```
+[[toc]]
 
 
-```js
-export const debounce = (func, wait = 50) => {
-    let timeout
-    return function() {
-    const context = this
-    const args = arguments
-    if (timeout) clearTimeout(timeout)
-       timeout = setTimeout(() => {
-      func.apply(context, args)
-    }, wait)
-  }
-}
-```
-
-```js
-/**
- * @description  节流: 无论调用多少次,最快只能是设定的时间触发一次
- * @export
- * @param {Function} func 需要节流的方法
- * @param {Number} wait 设定时间
- * @returns {Function} 包装的方法
- */
-
-export const throttle = (func, wait = 50) => {
-    let last = 0
-    return function() {
-    const now = +new Date()
-    if (now - last > wait) {
-      last = now
-      return func.apply(this, Array.from(arguments))
-    } else {
-      return false
-    }
-  }
-}
-```
-
-```js
-/**
- * @description  扁平化数组
- * @param arr {array} 需要扁平化的数组
- * @param deep {number}  展开数组的层次
- * @returns {array} 经过扁平化的数组
- */
-
-export function flatten(arr, deep = Infinity) {
-    return deep && Array.isArray(arr) ? [].concat(...arr.map(e => flatten(e, deep - 1))) : arr
-}
-```
-
----
-
-### 数组
+<!-- ### 数组
 * [`arrayMax`](#arraymax)
 * [`arrayMin`](#arraymin)
 * [`chunk`](#chunk)
@@ -196,8 +128,7 @@ export function flatten(arr, deep = Infinity) {
 * [`toOrdinalSuffix`](#toordinalsuffix)
 * [`UUIDGenerator`](#uuidgenerator)
 * [`validateEmail`](#validateemail)
-* [`validateNumber`](#validatenumber)
-
+* [`validateNumber`](#validatenumber) -->
 
 ## 数组
 
@@ -647,13 +578,28 @@ const without = (arr, ...args) => arr.filter(v => !args.includes(v));
 
 ```js
 const zip = (...arrays) => {
-const maxLength = Math.max(...arrays.map(x => x.length));
-return Array.from({length: maxLength}).map((_, i) => {
-return Array.from({length: arrays.length}, (_, k) => arrays[k][i]);
-})
+  const maxLength = Math.max(...arrays.map(x => x.length));
+  return Array.from({length: maxLength}).map((_, i) => {
+  return Array.from({length: arrays.length}, (_, k) => arrays[k][i]);
+  })
 }
 //zip(['a', 'b'], [1, 2], [true, false]); -> [['a', 1, true], ['b', 2, false]]
 //zip(['a'], [1, 2], [true, false]); -> [['a', 1, true], [undefined, 2, false]]
+```
+
+### 扁平化数组
+
+```js
+/**
+* @description  扁平化数组
+* @param arr {array} 需要扁平化的数组
+* @param deep {number}  展开数组的层次
+* @returns {array} 经过扁平化的数组
+*/
+
+export function flatten(arr, deep = Infinity) {
+    return deep && Array.isArray(arr) ? [].concat(...arr.map(e => flatten(e, deep - 1))) : arr
+}
 ```
 
 ## 浏览器
@@ -1203,6 +1149,25 @@ arr.reduce((acc, val) => acc.concat(Math.pow(val - mean, 2)), [])
 // standardDeviation([10,2,38,23,38,23,21], true) -> 12.29899614287479 (population)
 ```
 
+### 获取随机码
+
+```js
+/**
+ * 获取随机码
+ * @returns {string}
+ */
+export function getRandomId(num) {
+    var s = [];
+    var n = num || 6
+    var hexDigits = "0123456789abcdefhijklmnopqrstuvwxyz";
+    for (var i = 0; i < n; i++) {
+        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+    }
+    var uuid = s.join("");
+    return uuid;
+}
+```
+
 ## 媒体
 
 
@@ -1218,7 +1183,7 @@ const msg = new SpeechSynthesisUtterance(message);
 msg.voice = window.speechSynthesis.getVoices()[0];
 window.speechSynthesis.speak(msg);
 };
-// speechSynthesis('Hello, World') -> plays the message
+// speechSynthesis('吃葡萄吐葡萄皮，不吃葡萄倒吐葡萄皮') -> plays the message
 ```
 
 ## 节点
@@ -1696,6 +1661,48 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 // validateNumber('10') -> true
 ```
 
+### 防抖
+
+```js
+export const debounce = (func, wait = 50) => {
+    let timeout
+    return function() {
+    const context = this
+    const args = arguments
+    if (timeout) clearTimeout(timeout)
+       timeout = setTimeout(() => {
+      func.apply(context, args)
+    }, wait)
+  }
+}
+```
+
+### 节流
+
+```js
+/**
+* @description  节流: 无论调用多少次,最快只能是设定的时间触发一次
+* @export
+* @param {Function} func 需要节流的方法
+* @param {Number} wait 设定时间
+* @returns {Function} 包装的方法
+*/
+
+export const throttle = (func, wait = 50) => {
+    let last = 0
+    return function() {
+    const now = +new Date()
+    if (now - last > wait) {
+      last = now
+      return func.apply(this, Array.from(arguments))
+    } else {
+      return false
+    }
+  }
+}
+```
+
 
 [30 seconds of code](https://www.30secondsofcode.org/)
-[30 seconds of code github](https://github.com/30-seconds/30-seconds-of-code)
+
+[30 seconds of code in github](https://github.com/30-seconds/30-seconds-of-code)

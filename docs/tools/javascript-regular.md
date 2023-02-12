@@ -1,5 +1,7 @@
 # JavaScript 正则表达式
 
+## 纯数字
+
 ```html
 <el-input
     v-model="limit"
@@ -7,6 +9,8 @@
     >
 </el-input>
 ```
+
+## 千位符
 
 ```js
 /**
@@ -18,6 +22,7 @@ export function toThousandFilter(num) {
 }
 ```
 
+## 存储单位
 
 ```js
 /**
@@ -45,6 +50,8 @@ export function numberFormatter(num, digits) {
 }
 ```
 
+## 网站格式
+
 ```js
 /**
  * @param {string} url
@@ -52,10 +59,11 @@ export function numberFormatter(num, digits) {
  */
 export function validURL(url) {
     const reg = /^(https?|ftp):\/\/([a-zA-Z0-9.-]+(:[a-zA-Z0-9.&%$-]+)*@)*((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}|([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(:[0-9]+)*(\/($|[a-zA-Z0-9.,?'\\+&%$#=~_-]+))*$/
-      return reg.test(url)
+    return reg.test(url)
 }
 ```
 
+## 可用地址
 
 ```js
 /**
@@ -66,6 +74,8 @@ export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
 }
 ```
+
+## 邮箱格式
 
 ```js
 export function email(rule, value, callback) {
@@ -82,6 +92,7 @@ export function email(rule, value, callback) {
 }
 ```
 
+## 密码格式
 
 ```js
 export function password (rule, value, callback) {
