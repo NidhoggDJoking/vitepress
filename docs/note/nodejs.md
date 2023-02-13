@@ -152,7 +152,6 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
 `..` 相当于返回上层
 
 
-
 ```js
 const fs = require('fs')
 const packageJSON = require('./package.json')
@@ -163,4 +162,52 @@ fs.readFile('./public/index.html', 'utf-8', (err, data) => {
     fs.writeFile('./public/index.html', newHtml, () => {})
   }
 })
+```
+
+### 重写一个文件，如果文件不存在则新增
+
+```js
+const fileSave = require("file-save");
+const path = require("path");
+fileSave(path.resolve(__dirname, "./writeIn.js"))
+  .write(`var a = 1;`, "utf8")
+  .write("\n", "utf8")
+  .write(`let b = 2;`, () => {
+    console.log("写入回调");
+  })
+  .end("\n")
+  .finish(() => {
+    console.log("写入完成");
+  });
+```
+
+
+### 读取目录的内容
+
+```js
+  const fs = require("fs");
+  const path = require("path");
+  var menu = fs.readdirSync(path.resolve(__dirname, '../note'))
+  console.log(menu);
+```
+
+### cross-env
+
+跨平台设置和使用环境变量的脚本
+
+```sh
+npm install --save-dev cross-env
+```
+
+```json
+{
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
+  }
+}
+```
+
+
+```js
+const isProd = process.env.NODE_ENV === 'production';
 ```
