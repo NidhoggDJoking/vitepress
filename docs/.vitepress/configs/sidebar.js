@@ -122,7 +122,7 @@ function sidebarTools() {
         { text: "Emoji List", link: "/tools/emoji-list" },
         { text: "Javascript Function", link: "/tools/javascript-function" },
         { text: "Javascript Regular", link: "/tools/javascript-regular" },
-        { text: "SHIJI", link: "/tools/shiji" },
+        { text: "Links", link: "/tools/cipher" },
       ]
     }
   ];

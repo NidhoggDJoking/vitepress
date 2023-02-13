@@ -2,8 +2,8 @@ name: Algolia
 
 on:
   schedule:
-    - cron:  '0 19 * * 6'
-    # UTF 星期六晚上7点 => 北京时间星期一凌晨3点 
+    - cron:  '0 19 * * 0'
+    # UTF 星期天晚上7点 => 北京时间星期一凌晨3点 
   
 jobs:
   algolia:
