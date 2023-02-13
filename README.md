@@ -36,7 +36,7 @@ tip: `Gitee Pages`服务部署的路径是全小写的，而`Github Pages`生成
 
 ### 持续集成
 
-GitHub 使用的是`GitHub Actions`持续集成服务
+GitHub 使用的是[`GitHub Actions`](https://docs.github.com/zh/actions/quickstart)持续集成服务
 
 Gitee: [Gitee Go 是 Gitee 全新推出的一款 CI/CD 工具](https://gitee.com/NidhoggDJoking/VitePress/gitee_go/welcome) 我采取本地走脚本的方式
 

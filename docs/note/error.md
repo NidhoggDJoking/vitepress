@@ -1,6 +1,8 @@
 # 疑难杂症
 
 
+## MySQL
+
 ### MYSQL的版本为8.0+的时候 ， 用NODEJS查询数据库报错:
 
 ```sh
@@ -141,11 +143,9 @@ algoliasearch.exceptions.RequestException: Method not allowed with this API key
 指的是`Admin API Key` 而非 `Search-Only API Key`
 
 
+### Push indices to Algolia
+
 ```sh
-Push indices to Algolia
-
-...someting
-
 Crawling issue: nbHits 0 for `XXX`
 ```
 
