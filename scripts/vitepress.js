@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 var README_File = fs.readFileSync(
-    path.resolve(__dirname, '../README'),
+    path.resolve(__dirname, '../README.md'),
     'utf8'
 );
 
