@@ -6,7 +6,7 @@
 
 <h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">JK_VitePress</a></h1>
 
-<p align="center">
+<p align="center" class="middle">
   <a href="https://vitejs.cn/" target="_blank">
       <img src="https://img.shields.io/badge/VitePress-v1.0.0_alpha.45-646CFF?logo=Vite">
   </a>

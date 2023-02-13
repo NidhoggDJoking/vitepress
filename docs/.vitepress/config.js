@@ -63,7 +63,7 @@ export default {
       placeholder: '请输入关键词',
       buttonText: '搜索'
     },
-    returnToTopLabel: '火箭升空🚀',
+    // returnToTopLabel: '火箭升空🚀',
     // 碳广告 显示碳广告的选项。需要网站月访问量到达10000次才能申请成功
     // carbonAds: {
     //   code: 'your-carbon-code',

@@ -1,3 +1,6 @@
+---
+outline: [2,3]
+---
 # Shell
 
 <!-- https://www.cnblogs.com/fengliu-/p/9999854.html -->

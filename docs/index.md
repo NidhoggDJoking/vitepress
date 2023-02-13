@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /getting-started
+      link: /note/vitepress
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/NidhoggDJoking/VitePress

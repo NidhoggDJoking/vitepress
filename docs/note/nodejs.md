@@ -1,3 +1,7 @@
+---
+outline: 'deep'
+---
+
 # NodeJS
 
 ## 前端工程化

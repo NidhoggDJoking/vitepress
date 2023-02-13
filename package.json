@@ -17,9 +17,9 @@
     "@docsearch/js": "^3.2.1"
   },
   "scripts": {
-    "bootstrap": "yarn || npm i",
     "dev": "vitepress dev docs",
     "docs:dev": "vitepress dev docs",
+    "bootstrap": "yarn || npm i",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "build:deploy": "bash scripts/gh-pages.sh",

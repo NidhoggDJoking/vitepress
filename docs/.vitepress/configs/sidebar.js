@@ -81,10 +81,17 @@ function sidebarConfig() {
 function sidebarNote() {
   return [
     {
+      text: "Introduction",
+      collapsible: true,
+      items: [
+        { text: "VitePress", link: "/note/vitepress" },
+      ],
+    },
+    {
       text: "Note",
       collapsible: true,
       items: [
-        { text: "VitePress", link: "/note/note" },
+        { text: "Logs", link: "/note/note" },
         { text: "NodeJS", link: "/note/nodejs" },
         { text: "POSIX cron", link: "/note/posix-cron" },
         { text: "Shell", link: "/note/shell" },
@@ -104,13 +111,6 @@ function sidebarNote() {
         { text: "💯 JavaScript Questions", link: "/note/javascript-questions" },
       ],
     },
-    {
-      text: "Introduction",
-      collapsible: true,
-      items: [
-        { text: "JK_VitePress", link: "/note/vitepress" },
-      ],
-    },
   ];
 }
 
@@ -122,6 +122,7 @@ function sidebarTools() {
         { text: "Emoji List", link: "/tools/emoji-list" },
         { text: "Javascript Function", link: "/tools/javascript-function" },
         { text: "Javascript Regular", link: "/tools/javascript-regular" },
+        { text: "Gitee Go", link: "/tools/gitee" },
         { text: "Links", link: "/tools/cipher" },
       ]
     }
