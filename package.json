@@ -17,12 +17,13 @@
     "@docsearch/js": "^3.2.1"
   },
   "scripts": {
+    "bootstrap": "yarn || npm i",
     "dev": "vitepress dev docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "deploy:local": "bash scripts/gh-pages.sh",
-    "sync:vitepress": "bash scripts/vitepress.js"
+    "build:deploy": "bash scripts/gh-pages.sh",
+    "sync:vitepress": "node scripts/vitepress.js"
   },
   "keywords": [
     "vite",

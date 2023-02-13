@@ -23,11 +23,11 @@ jobs:
           cache: yarn
       - run: yarn install --frozen-lockfile
 
+      - name: Sync
+        run: yarn sync:vitepress
+
       - name: Build
         run: yarn docs:build
-
-      # - name: Sync
-      #   run: yarn sync:vitepress
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
