@@ -105,10 +105,10 @@ function sidebarNote() {
       ],
     },
     {
-      text: "介绍",
+      text: "Introduction",
       collapsible: true,
       items: [
-        { text: "什么是 VitePress？", link: "/note/vitepress" },
+        { text: "JK_VitePress", link: "/note/vitepress" },
       ],
     },
   ];

@@ -8,10 +8,10 @@
 
 <p align="center">
   <a href="https://vitejs.cn/" target="_blank">
-      <img src="https://img.shields.io/badge/VitePress-v1.0.0_alpha.45-646CFF">
+      <img src="https://img.shields.io/badge/VitePress-v1.0.0_alpha.45-646CFF?logo=Vite">
   </a>
-  <a href="https://www.sveltejs.cn" target="_blank">
-      <img src="https://img.shields.io/badge/vue-v3.2.37-success?logo=vue">
+  <a href="https://cn.vuejs.org/" target="_blank">
+      <img src="https://img.shields.io/badge/Vue-v3.2.37-success?logo=Vue.js">
   </a>
   <a href="https://developer.stackblitz.com/" target="_blank">
       <img src="https://img.shields.io/badge/Stackblitz-dev_tool-1374ef?logo=StackBlitz" >
