@@ -21,7 +21,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "deploy:local": "bash scripts/gh-pages.sh"
+    "deploy:local": "bash scripts/gh-pages.sh",
+    "sync:vitepress": "bash scripts/vitepress.js"
   },
   "keywords": [
     "vite",
