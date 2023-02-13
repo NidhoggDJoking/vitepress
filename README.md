@@ -1,14 +1,23 @@
-<h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">VitePress</a></h1>
+<p align="center">
+  <a href="https://github.com/NidhoggDJoking/vitepress" target="_blank">
+    <img width="160" src="https://cdn.jsdelivr.net/gh/nidhoggdjoking/CDN@2.4/img/ReLogo.png" alt="logo">
+  </a>
+</p>
+
+<h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">JK_VitePress</a></h1>
 
 <p align="center">
   <a href="https://vitejs.cn/" target="_blank">
-      <img src="https://img.shields.io/badge/VitePress-1.0.0_alpha.8-646CFF">
+      <img src="https://img.shields.io/badge/VitePress-v1.0.0_alpha.45-646CFF">
   </a>
   <a href="https://www.sveltejs.cn" target="_blank">
-      <img src="https://img.shields.io/badge/vue-3.2.37-success?logo=vue">
+      <img src="https://img.shields.io/badge/vue-v3.2.37-success?logo=vue">
   </a>
   <a href="https://developer.stackblitz.com/" target="_blank">
       <img src="https://img.shields.io/badge/Stackblitz-dev_tool-1374ef?logo=StackBlitz" >
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
 </p>
 
