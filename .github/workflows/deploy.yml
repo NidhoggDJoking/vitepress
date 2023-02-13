@@ -25,9 +25,10 @@ jobs:
 
       - name: Build
         run: yarn docs:build
-      - name: Sync
-      
-        run: yarn sync:vitepress
+
+      # - name: Sync
+      #   run: yarn sync:vitepress
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
