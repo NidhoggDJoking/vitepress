@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/NidhoggDJoking/vitepress" target="_blank">
-    <img width="160" src="https://cdn.jsdelivr.net/gh/nidhoggdjoking/CDN@2.4/img/ReLogo.png" alt="logo">
+    <img width="280" src="https://cdn.jsdelivr.net/gh/nidhoggdjoking/CDN@2.4/img/mmx2.png" alt="logo">
   </a>
 </p>
 
