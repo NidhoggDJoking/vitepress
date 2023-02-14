@@ -1,11 +1,16 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const { Layout } = DefaultTheme
 
 const show = ref(true)
 
+let clientHeight = document.body.clientHeight;
+
+onMounted(() => window.addEventListener('scroll', onScrollFun))
+
+onUnmounted(() => window.removeEventListener('scroll', onScrollFun))
 
 function ReturnToTop() {
     var djs = setInterval(function () {
@@ -19,14 +24,24 @@ function ReturnToTop() {
     }, 10);
 }
 
+function onScrollFun(){
+  if(document.documentElement.scrollTop == 0){
+    show.value = false
+  }else if(clientHeight < document.documentElement.scrollTop){
+    show.value = true
+  }
+}
+
 </script>
 
 <template>
   <Layout>
     <template #aside-outline-after>
-      <div class="return2top" v-if="show" @click="ReturnToTop">
-        这是一个简陋的返回顶部
-      </div>
+      <Transition>
+        <div class="return2top" v-if="show" @click="ReturnToTop">
+          简陋的返回顶部
+        </div>
+      </Transition>
     </template>
   </Layout>
 </template>
@@ -36,7 +51,16 @@ function ReturnToTop() {
 .return2top{
   position: absolute;
   bottom: 37px;
-  right: 10px;
+  right: 0;
   cursor: pointer;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
