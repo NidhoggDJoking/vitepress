@@ -24,7 +24,7 @@
     "docs:serve": "vitepress serve docs",
     "build:deploy": "bash scripts/gh-pages.sh",
     "sync:vitepress": "node scripts/vitepress.js",
-    "dev:codespace":"npm run dev -- --host 0.0.0.0"
+    "dev:codespace": "npm run dev -- --host 0.0.0.0"
   },
   "keywords": [
     "vite",
