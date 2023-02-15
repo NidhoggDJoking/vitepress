@@ -105,3 +105,25 @@ export function password (rule, value, callback) {
     }
 }
 ```
+
+### 必须包含数字加字母 不能包含特殊符号
+
+```js
+var reg = new RegExp(/^[0-9A-Za-z]+$/);
+reg.test(str)
+```
+
+### 必须包含数字加字母 可包含特殊符号
+
+```js
+var reg = new RegExp(/[A-Za-z].*[0-9]|[0-9].*[A-Za-z]/);
+reg.test(str)
+```
+
+
+
+<!-- 
+```js
+var reg = new RegExp(/^(?![^a-zA-Z]+$)(?!\D+$)/);
+reg.test(str)
+``` -->
