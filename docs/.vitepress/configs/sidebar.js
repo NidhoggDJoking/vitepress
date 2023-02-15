@@ -91,10 +91,10 @@ function sidebarNote() {
       text: "Note",
       collapsible: true,
       items: [
-        { text: "Logs", link: "/note/note" },
         { text: "NodeJS", link: "/note/nodejs" },
         { text: "POSIX cron", link: "/note/posix-cron" },
         { text: "Shell", link: "/note/shell" },
+        { text: "Notification", link: "/note/window-notification" },
       ],
     },
     {
@@ -102,6 +102,7 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "Error", link: "/note/error" },
+        { text: "Logs", link: "/note/note" },
       ],
     },
     {
