@@ -1,15 +1,14 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
+import layout from './layout.vue'
 import './global.less'
 import './button.less'
+
 // export default DefaultTheme
-
-import Layout from './Layout.vue'
-
 
 export default {
     ...DefaultTheme,
-    Layout: Layout,
+    Layout: layout,
     enhanceApp(ctx) {
       // extend default theme custom behaviour.
       // 扩展默认主题自定义行为。
@@ -17,6 +16,6 @@ export default {
   
       // register your custom global components
       // 注册自定义全局组件
-      ctx.app.component(Layout /* ... */)
+      // ctx.app.component(Layout /* ... */)
     }
   }
