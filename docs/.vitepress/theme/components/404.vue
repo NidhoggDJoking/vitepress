@@ -1,27 +1,13 @@
 <template>
-    <div>
+   <NotFound>
         
-    </div>
+   </NotFound>
 </template>
 
-<script>
-export default {
-    name: 'Vitepress404',
-
-    data() {
-        return {
-            
-        };
-    },
-
-    mounted() {
-        
-    },
-
-    methods: {
-        
-    },
-};
+<script setup>
+import DefaultTheme from 'vitepress/theme'
+const { NotFound } = DefaultTheme
+console.log(DefaultTheme);
 </script>
 
 <style lang="scss" scoped>
