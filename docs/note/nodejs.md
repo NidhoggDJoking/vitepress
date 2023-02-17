@@ -6,7 +6,7 @@ outline: 'deep'
 
 ## 前端工程化
 
-[项目地址](https://gitee.com/NidhoggDJoking/element-build-case)
+[案例项目地址](https://gitee.com/NidhoggDJoking/element-build-case)
 
 `build/bin/iconInit.js`
 
@@ -41,12 +41,18 @@ fs.writeFile(
 );
 ```
 
-对应文档：
-[`require('postcss')`](https://postcss.org/api/)-
-[`require('fs')`](http://nodejs.cn/api/fs.html)-
-[`require('path')`](http://nodejs.cn/api/path.html)
+NodeJs对应文档：
+- [`require('postcss')`](https://postcss.org/api/)-
+- [`require('fs')`](http://nodejs.cn/api/fs.html)-
+- [`require('path')`](http://nodejs.cn/api/path.html)
+
+
+### `path.resolve()` 
+
 
 `path.resolve()` 方法将路径或路径片段的序列解析为绝对路径。
+
+
 
 #### 关键字:
 
@@ -74,7 +80,7 @@ path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
 
 当 `file` 是文件名时，将数据异步地写入文件，如果文件已存在则替换该文件。 `data` 可以是字符串或缓冲区。
 
-例如:
+### Example：
 
 `packages/theme-chalk/src/icon.scss`
 
@@ -91,9 +97,7 @@ path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
   content: "\e6a4";
 }
 ```
-`node build/bin/iconInit.js` 将会转成
-
-`examples/icon.json`
+运行上述代码 `node build/bin/iconInit.js` 将会指定目录下生成 `examples/icon.json` ， 如下：
 
 ```json
 ['lollipop','ice-cream-square','ice-cream-round']
@@ -129,9 +133,9 @@ var file = fs.readFileSync(path.resolve(__dirname, './route.json'), 'utf8');
 console.log(file);
 ```
 
-### `basename`:
+### `path.basename`:
 
-`path.basename()` 方法返回 path 的最后一部分，类似于 Unix `basename` 命令。 尾随 目录分隔符 被忽略。
+`path.basename()` 方法返回 `path` 的最后一部分，类似于 Unix `basename` 命令。 尾随目录分隔符被忽略。
 
 ```js
 path.basename('/foo/bar/baz/asdf/quux.html');
@@ -209,9 +213,13 @@ path.dirname('/foo/bar/baz/asdf/quux');
 
 跨平台设置和使用环境变量的脚本
 
+安装：
+
 ```sh
 npm install --save-dev cross-env
 ```
+
+设置：
 
 ```json
 {
@@ -221,6 +229,7 @@ npm install --save-dev cross-env
 }
 ```
 
+使用：
 
 ```js
 const isProd = process.env.NODE_ENV === 'production';

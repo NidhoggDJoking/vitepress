@@ -1,4 +1,5 @@
-// 项目README.md 同步至 docs/note/vitepress.md
+//* 项目README.md 同步至 docs/note/vitepress.md
+//? npm run sync:vitepress
 
 'use strict';
 

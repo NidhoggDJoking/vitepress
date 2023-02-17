@@ -19,6 +19,8 @@ git commit -m 'deploy to the gh-pages'
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:NidhoggDJoking/VitePress.git master:gh-pages
 
+# 本地操作场景专用
+
 cd -
 
 rm -rf docs/.vitepress/dist

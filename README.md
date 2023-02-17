@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">JK_VitePress</a></h1>
+<h1 align="center"><a href="https://vitepress.docschina.org/" target="_blank">VitePress</a></h1>
 
 <p align="center" class="middle">
   <a href="https://vitejs.cn/" target="_blank">

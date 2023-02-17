@@ -282,25 +282,6 @@ Vitepress currently has SSG support for teleports to body only. For other target
 </ClientOnly>
 ```
 
-
-## Example
-
-### Our team
-
-<VPTeamMembers size="medium" :members="members" />
-
 <script setup>
 import ModalDemo from '../components/ModalDemo.vue'
-import { VPTeamMembers } from 'vitepress/theme'
-const members = [
-  {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: '尤雨溪',
-    title: '作者',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
-  },
-]
 </script>

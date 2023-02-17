@@ -2,7 +2,7 @@
 
 ## 自己写的
 
-<!--@include: ../../.vitepress/theme/layout.vue-->
+<<< @/.vitepress/theme/layout.vue
 
 ## `plugin-back-to-top/BackToTop.vue`
 
