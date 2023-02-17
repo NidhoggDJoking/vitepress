@@ -85,6 +85,8 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "VitePress", link: "/note/vitepress" },
+        { text: "Last Updated", link: "/note/last-updated" },
+        { text: "Back To Top", link: "/note/back-to-top" },
       ],
     },
     {

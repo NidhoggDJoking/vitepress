@@ -1,8 +1,8 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
-import layout from './layout.vue'
-import './global.less'
-import './button.less'
+import layout from './components/layout.vue'
+import './style/global.less'
+import './style/button.less'
 
 // export default DefaultTheme
 
