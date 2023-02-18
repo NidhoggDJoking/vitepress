@@ -1,47 +1,51 @@
 :root {
-    --vt-c-black-soft: #242424;
-    --vt-c-white-soft: #f9f9f9;
-    --vt-c-bg-soft: var(--vt-c-white-soft);
-  }
-  
-  .dark {
-    --vt-c-bg-soft: var(--vt-c-black-soft);
-  }
-  
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  
+  --vt-c-black-soft: #242424;
+  --vt-c-white-soft: #f9f9f9;
+  --vt-c-bg-soft: var(--vt-c-white-soft);
+}
+
+.dark {
+  --vt-c-bg-soft: var(--vt-c-black-soft);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c8c8;
+  border-radius: 20px;
+}
+
+.dark {
   ::-webkit-scrollbar-track-piece {
-    background: #e0e0e0;
+    background: #303030;
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background: #c8c8c8;
+    background: #666666;
     border-radius: 20px;
   }
-  
-  .dark {
-    ::-webkit-scrollbar-track-piece {
-      background: #303030;
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background: #666666;
-      border-radius: 20px;
-    }
+}
+
+.custom-block.details summary {
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-right: 10px;
   }
-  
-  .custom-block.details summary {
-    cursor: pointer;
-  }
-  
-  .middle {
-    display: flex;
-    justify-content: center;
-    a {
-      margin-right: 10px;
-    }
-  }
-  
+}
+
+.image-src{
+  top: 54% !important;
+}

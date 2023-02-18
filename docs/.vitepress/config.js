@@ -10,6 +10,8 @@ export default {
   // titleTemplate: '', // 设置false为禁用该功能。标题的后缀。
   // description: "我是站点的描述元标记", // HTML页面<meta>的描述
   lastUpdated: true, // git commit的最后更新时间
+  cleanUrls: true, // 允许从 URL 中删除尾随。`.html`: “干净 URL”
+  cacheDir: './.vitepress/cache', // 缓存文件的目录
   head: [
     [
       'link',
@@ -37,7 +39,12 @@ export default {
     // }
   },
   themeConfig: {
-    logo: '/Pikachu.svg', //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
+    // logo: '/Pikachu.svg', //显示在导航栏中的徽标文件，位于站点标题之前。接受路径字符串或对象以为亮/暗模式设置不同的徽标。
+    logo: {
+      light: '/Spongebob.svg',
+      dark: '/Pikachu.svg',
+      alt: 'Bohemian Rhapsody'
+    },
     siteTitle:'Bohemian Rhapsody', // 替换导航中的默认站点标题，就是logo旁边的标题（Bohemian Rhapsody，）
     outlineTitle: 'On this page', // 可用于自定义右侧边栏的标题（在大纲链接的顶部）
     lastUpdatedText: '最近更新时间：', // 默认：Last updated,在上次更新时间之前显示的前缀文本
