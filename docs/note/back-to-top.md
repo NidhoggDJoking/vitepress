@@ -1,10 +1,13 @@
-# [@vuepress/plugin-back-to-top](https://vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html)
+---
+outline: 'deep'
+---
+# 返回顶部
 
-## 自己写的
+### `theme/components/layout.vue`
 
 <<< @/.vitepress/theme/components/layout.vue
 
-## `plugin-back-to-top/BackToTop.vue`
+### [@vuepress/plugin-back-to-top](https://vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html)
 
 ```vue
 <template>

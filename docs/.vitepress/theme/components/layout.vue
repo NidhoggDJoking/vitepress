@@ -1,33 +1,39 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import { ref, onMounted, onUnmounted } from 'vue'
-
+import debounce from 'lodash.debounce'
 const { Layout } = DefaultTheme
-
 const show = ref(true)
-
 let clientHeight = document.body.clientHeight
 
-onMounted(() => window.addEventListener('scroll', onScrollFun))
+onMounted(() =>
+  window.addEventListener(
+    'scroll',
+    debounce(() => {
+      onScrollFun()
+    }, 200)
+  )
+)
 
 onUnmounted(() => window.removeEventListener('scroll', onScrollFun))
 
 function ReturnToTop() {
-  var djs = setInterval(function () {
+  var timer = setInterval(function () {
     var oTop = document.body.scrollTop || document.documentElement.scrollTop
     if (oTop > 0) {
-      document.body.scrollTop = document.documentElement.scrollTop = oTop - 50
+      document.body.scrollTop = document.documentElement.scrollTop = oTop - 66
     } else {
-      clearInterval(djs)
+      clearInterval(timer)
       show.value = false
     }
   }, 10)
 }
 
 function onScrollFun() {
-  if (document.documentElement.scrollTop == 0) {
+  var oTop = document.body.scrollTop || document.documentElement.scrollTop
+  if (oTop == 0) {
     show.value = false
-  } else if (clientHeight < document.documentElement.scrollTop) {
+  } else if (clientHeight < oTop) {
     show.value = true
   }
 }
@@ -38,7 +44,7 @@ function onScrollFun() {
     <template #aside-outline-after>
       <Transition>
         <div class="return2top" v-if="show" @click="ReturnToTop">
-          <img src="/rocket.svg" alt="">
+          <img src="/rocket.svg" alt="" />
         </div>
       </Transition>
     </template>
@@ -53,10 +59,12 @@ function onScrollFun() {
   right: 0;
   cursor: pointer;
 }
-.return2top svg,img{
+
+.return2top svg,img {
   width: 70px;
   height: 70px;
 }
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;
