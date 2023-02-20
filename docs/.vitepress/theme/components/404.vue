@@ -1,7 +1,5 @@
 <template>
-   <NotFound>
-
-   </NotFound>
+   <NotFound/>
 </template>
 
 <script setup>
