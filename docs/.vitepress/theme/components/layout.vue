@@ -38,28 +38,6 @@ function onScrollFun() {
   }
 }
 
-var speak;
-let text = '吃葡萄倒吐葡萄皮'
-function palyRadio(){
-  speak = window,speechSynthesis,
-  speak = new SpeechSynthesisUtterance(text)
-  speak.lang = 'zh-cn'
-  speak.onend = () => {}
-  window.speechSynthesis.speak(speak)
-}
-
-function pauseRadio(){
-  window.speechSynthesis.pause()
-}
-
-function resumeRadio(){
-  window.speechSynthesis.resume()
-}
-
-function stopRadio(){
-  window.speechSynthesis.cancel()
-}
-
 </script>
 
 <template>
