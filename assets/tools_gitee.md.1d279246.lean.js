@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,a as l}from"./app.a7df10a2.js";const F=JSON.parse('{"title":"Gitee Go","description":"","frontmatter":{"aside":false},"headers":[],"relativePath":"tools/gitee.md","lastUpdated":1676294890000}'),p={name:"tools/gitee.md"},e=l("",2),o=[e];function t(c,r,C,i,y,A){return n(),a("div",null,o)}const b=s(p,[["render",t]]);export{F as __pageData,b as default};
