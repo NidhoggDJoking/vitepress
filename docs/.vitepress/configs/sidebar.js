@@ -100,6 +100,13 @@ function sidebarNote() {
       ],
     },
     {
+      text: "Element",
+      collapsible: true,
+      items: [
+        { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
+      ],
+    },
+    {
       text: "Questions",
       collapsible: true,
       items: [
