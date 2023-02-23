@@ -448,6 +448,11 @@
   "resolved" "https://registry.npmjs.org/is-what/-/is-what-3.14.1.tgz"
   "version" "3.14.1"
 
+"jquery@^3.6.3":
+  "integrity" "sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.3.tgz"
+  "version" "3.6.3"
+
 "jsonc-parser@^3.2.0":
   "integrity" "sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w=="
   "resolved" "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.2.0.tgz"

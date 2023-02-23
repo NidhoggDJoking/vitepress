@@ -1,6 +1,9 @@
 
 # 首页音乐播放器实现过程
 
+
+<musicPlayer/>
+
 ### 创建播放器
 
 ```js
@@ -49,12 +52,7 @@ function star() {
     my_audio.ontimeupdate = function () {
         for (var i = 0, l = lyric.length; i < l; i++) {
             if (this.currentTime > lyric[i][0]) {
-                if (i >= 1) {
-                    $("#subtitles").html(lyric[i][1]);
-                    // PlanB
-                    // $("#subtitles").attr('data-sub', lyric[i][1]);
-
-                }
+                $("#subtitles").html(lyric[i][1]);
             };
         };
     };
@@ -97,6 +95,5 @@ function parseLyric(text) {
     return result;
 }
 ```
-
 
 #### [nidhoggdjoking.github.io](https://nidhoggdjoking.github.io/)
