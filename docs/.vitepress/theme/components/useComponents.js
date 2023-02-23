@@ -3,5 +3,5 @@ import music from './music.vue'
 
 
 export function useComponents(app) {
-  app.component('player', music)
+  app.component('musicPlayer', music)
 }

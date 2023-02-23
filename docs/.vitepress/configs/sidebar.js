@@ -87,6 +87,7 @@ function sidebarNote() {
         { text: "VitePress", link: "/note/vitepress" },
         { text: "Last Updated", link: "/note/last-updated" },
         { text: "Back To Top", link: "/note/back-to-top" },
+        { text: "Music Player", link: "/note/music-player" },
       ],
     },
     {

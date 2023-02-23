@@ -19,11 +19,11 @@ hero:
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/NidhoggDJoking/VitePress
-    - theme: me
+    - theme: alt
       text: 关于我
       link: https://nidhoggdjoking.gitee.io/eternal/
     - theme: alt
-      text: Docsify 老文档
+      text: Docsify
       link: https://nidhoggdjoking.gitee.io/#/
 
 

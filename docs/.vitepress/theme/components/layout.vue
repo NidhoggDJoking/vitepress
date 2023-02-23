@@ -45,7 +45,7 @@ function onScrollFun() {
     <template #aside-outline-after>
       <Transition>
         <div class="return2top" v-if="show" @click="ReturnToTop">
-          <img src="/rocket.svg" alt="" />
+          <img src="/up.svg" alt="" />
         </div>
       </Transition>
     </template>
