@@ -58,6 +58,6 @@ function parseLyric(text) {
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .music-player{}
 </style>
