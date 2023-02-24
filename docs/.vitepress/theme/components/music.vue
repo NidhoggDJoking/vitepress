@@ -5,9 +5,10 @@
 <script setup>
 import { onMounted } from 'vue'
 import $ from 'jquery'
+import URL from '../../../public/nameoflove.m4a?url'
 
 onMounted(() => {
-    openMusic('/nameoflove.m4a')
+    openMusic(URL)
 })
 
 // 创建播放器

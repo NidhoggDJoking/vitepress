@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "@docsearch/js": "^3.2.1",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "path": "^0.12.7"
   },
   "scripts": {
     "dev": "vitepress dev docs",
