@@ -3,12 +3,20 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, onBeforeUnmount} from 'vue'
 import $ from 'jquery'
-import URL from '../../../public/nameoflove.m4a?url'
+import URL from '../../../static/nameoflove.m4a?url'
 
 onMounted(() => {
     openMusic(URL)
+})
+
+onBeforeUnmount(()=>{
+    var audio = document.getElementById('music');
+    if(audio.paused){
+        audio.pause()
+    }
+    document.getElementsByTagName('body')[0].removeChild(audio);
 })
 
 // 创建播放器
@@ -20,9 +28,11 @@ function openMusic(url, id = 'music', volume = '0.2') {
     document.getElementsByTagName('body')[0].appendChild(music);
     document.getElementById("music").volume = volume;
     var audio = document.getElementById(id);
+    console.log(audio,audio.paused)
     // 回车暂停或播放
     $(document).keydown(function (event) {
         if (event.keyCode == 13) {
+            // audio.paused: true = 暂停 、false = 播放
             if (audio.paused) {
                 audio.play();
                 close();
@@ -84,6 +94,10 @@ function parseLyric(text) {
     });
     // console.log(result)
     return result;
+}
+
+function close(){
+
 }
 
 </script>

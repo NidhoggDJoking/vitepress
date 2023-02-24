@@ -111,8 +111,9 @@ function sidebarNote() {
       text: "Questions",
       collapsible: true,
       items: [
-        { text: "Error", link: "/note/error" },
         { text: "Logs", link: "/note/note" },
+        { text: "Vite", link: "/note/error/vite" },
+        { text: "Mysql", link: "/note/error/mysql" },
       ],
     },
     {
