@@ -114,6 +114,7 @@ function sidebarNote() {
         { text: "Logs", link: "/note/note" },
         { text: "Vite", link: "/note/error/vite" },
         { text: "Mysql", link: "/note/error/mysql" },
+        { text: "Algolia", link: "/note/error/algolia" },
       ],
     },
     {
