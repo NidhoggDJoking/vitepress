@@ -2,17 +2,13 @@
 outline: 'deep'
 ---
 
-# VitePress 最后更新时间实现
+# 实现最近更新时间
 
-## 核心代码:
+---
+
+### 核心方法:
 
 ```js
-const path = require('path')
-const spawn = require('cross-spawn')
-
-/**
- * @type {import('@vuepress/types').Plugin}
- */
 module.exports = (options = {}, context) => ({
   extendPageData ($page) {
     const { transformer, dateOptions } = options

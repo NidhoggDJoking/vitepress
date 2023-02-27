@@ -9,7 +9,7 @@ hero:
   text: Vite 和 Vue 支持的静态站点生成器
   tagline: 简单、强大且高性能。满足您一直想要的现代 SSG 框架。
   image:
-    dark: /js_min.png
+    dark: /day_min.png
     light: /development_min.png
     alt: VitePress
   actions:

@@ -1,10 +1,13 @@
 
-# 首页音乐播放器实现过程
+# 音乐播放器实现
 
 
 <musicPlayer/>
 
-### 创建播放器
+## 标签型
+
+
+- ### 创建播放器：
 
 ```js
 function openMusic() {
@@ -32,6 +35,10 @@ function openMusic() {
 }
 ```
 
+:::tip
+除了`audio`也能用到标签`<embed>`,`<object>`,`<a>`
+:::
+
 ### `HTMLMediaElement.volume` 属性可设置媒体播放时的音量。
 
 ```js
@@ -40,14 +47,13 @@ function Tj(volume = 0.5) {
 }
 ```
 
-### 歌词处理
+- ### 歌词处理：
 
 ```js
 function star() {
     var my_audio = document.getElementById("music");
     var songContent = '[00:10.60]EGOIST - エウテルペ\n [00:10.60]词：ryo\n [00:15.60]曲：ryo\n [00:22.87]咲いた野の花よ\n [00:30.88]ああ どうか教えておくれ\n [00:38.07]人は何故 傷つけあって\n [00:46.07]争うのでしょう\n [00:54.87]凛と咲く花よ\n [01:02.72]そこから何が見える\n [01:10.08]人は何故 許しあうこと\n [01:17.98]できないのでしょう\n [01:30.17]雨が過ぎて夏は\n [01:34.77]青を移した\n [01:38.82]一つになって\n [01:46.72]小さく揺れた\n [01:50.76]私の前で\n [01:54.81]何も言わずに\n [02:18.78]枯れていく友に\n [02:26.86]お前は何を思う\n [02:34.02]言葉を持たぬその葉で\n [02:40.06]なんと愛を伝える\n [02:54.10]夏の陽は陰って\n [02:58.71]風が靡いた\n [03:02.81]二つ重なって\n [03:10.68]生きた証を\n [03:14.78]私は唄おう\n [03:18.76]名もなき者のため\n';
     var lyric = parseLyric(songContent);
-    // console.log(lyric)
     lyricContainer = document.getElementById('subtitles');
     my_audio.ontimeupdate = function () {
         for (var i = 0, l = lyric.length; i < l; i++) {
@@ -59,7 +65,10 @@ function star() {
 }
 ```
 
-### 歌词解析
+
+
+
+- ### 歌词解析：
 
 ```js
 function parseLyric(text) {
@@ -96,4 +105,7 @@ function parseLyric(text) {
 }
 ```
 
-#### [nidhoggdjoking.github.io](https://nidhoggdjoking.github.io/)
+<!-- #### [nidhoggdjoking.github.io](https://nidhoggdjoking.github.io/) -->
+
+
+## 方法型：
