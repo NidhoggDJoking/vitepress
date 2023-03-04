@@ -41,11 +41,13 @@ fs.writeFile(
 );
 ```
 
-NodeJs对应文档：
-- [`require('postcss')`](https://postcss.org/api/)-
-- [`require('fs')`](http://nodejs.cn/api/fs.html)-
-- [`require('path')`](http://nodejs.cn/api/path.html)
+### NodeJs对应文档：
 
+-  [`require('postcss')`](https://postcss.org/api/)
+-  [`require('fs')`](http://nodejs.cn/api/fs.html)
+-  [`require('path')`](http://nodejs.cn/api/path.html)
+
+---
 
 ### `path.resolve()` 
 

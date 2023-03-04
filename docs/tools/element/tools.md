@@ -1,9 +1,12 @@
+# ElementUI 工具方法
 
 - ## scrollBarWidth
 
 参考`elementUI`获取滚动条宽度的方法
 
-::: details
+
+
+::: details 生成一个存在滚动条的元素再将内部加入宽度百分百的元素在比较2个元素的差值：
 ```js
 import Vue from 'vue';
 

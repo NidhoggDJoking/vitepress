@@ -97,22 +97,23 @@ function sidebarNote() {
         { text: "NodeJS", link: "/note/nodejs" },
         { text: "POSIX cron", link: "/note/posix-cron" },
         { text: "Shell", link: "/note/shell" },
+        { text: "Vite", link: "/note/vite" },
         { text: "Notification", link: "/note/window-notification" },
       ],
     },
-    {
-      text: "Element",
-      collapsible: true,
-      items: [
-        { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
-      ],
-    },
+    // {
+    //   text: "Element",
+    //   collapsible: true,
+    //   items: [
+    //     { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
+    //   ],
+    // },
     {
       text: "Questions",
       collapsible: true,
       items: [
         { text: "Logs", link: "/note/note" },
-        { text: "Vite", link: "/note/error/vite" },
+        { text: "Vite import", link: "/note/error/vite-import" },
         { text: "Mysql", link: "/note/error/mysql" },
         { text: "Algolia", link: "/note/error/algolia" },
       ],
@@ -137,6 +138,14 @@ function sidebarTools() {
         { text: "Javascript Regular", link: "/tools/javascript-regular" },
         { text: "Gitee Go", link: "/tools/gitee" },
         { text: "Links", link: "/tools/cipher" },
+      ]
+    },
+    {
+      text: "Element",
+      items: [
+        {
+          text: "Element Tool",  link: "/tools/element/tools"
+        }
       ]
     }
   ];

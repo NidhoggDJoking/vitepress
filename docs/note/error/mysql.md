@@ -1,9 +1,10 @@
-# 疑难杂症
+---
+outline: 'deep'
+---
 
+# MySQL:
 
-## MySQL
-
-### MYSQL的版本为8.0+的时候 ， 用NODEJS查询数据库报错:
+- ### MYSQL的版本为8.0+的时候 ， 用NODEJS查询数据库报错:
 
 ```sh
 ER_NOT_SUPPORTED_AUTH_MODE
@@ -24,7 +25,6 @@ mysql> quit
 ::: warning
 Access denied for user 'XX'@'localhost' (using password: NO)
 :::
-### 
 
 ```sh
 $ cd /usr/local/mysql/bin
@@ -52,8 +52,7 @@ Enter password: (enter your root password)
 mysql>
 ```
 
-### MySQL 修改账户名与密码
-
+- ### MySQL 修改账户名与密码
 
 ::: danger 注意
 操作之前切记先关闭数据库的服务！
@@ -108,8 +107,6 @@ SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; 
 ```
 :::
-
-
 
 重启服务
 
