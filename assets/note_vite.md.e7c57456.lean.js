@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a,a as n}from"./app.9f8f8c6d.js";const m=JSON.parse('{"title":"Vite 拓展","description":"","frontmatter":{},"headers":[],"relativePath":"note/vite.md","lastUpdated":1677940037000}'),s={name:"note/vite.md"},i=n("",2),o=[i];function c(r,d,_,h,l,u){return t(),a("div",null,o)}const f=e(s,[["render",c]]);export{m as __pageData,f as default};
