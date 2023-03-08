@@ -2,10 +2,12 @@
   --vt-c-black-soft: #242424;
   --vt-c-white-soft: #f9f9f9;
   --vt-c-bg-soft: var(--vt-c-white-soft);
+  --vp-home-hero-name-background-yang: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 .dark {
   --vt-c-bg-soft: var(--vt-c-black-soft);
+  --vp-home-hero-name-background-yang: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 }
 
 ::-webkit-scrollbar {
@@ -44,4 +46,11 @@
   a {
     margin-right: 10px;
   }
+}
+
+.color-text{
+  background-image: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

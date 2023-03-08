@@ -4,7 +4,7 @@
     "https://nidhoggdjoking.github.io/vitepress/"
   ],
   "rateLimit": 8,
-  "maxDepth": 10,
+  "maxDepth": 5,
   "selectors": {
     "lvl0": {
       "selector": "",
@@ -13,7 +13,9 @@
     "lvl1": ".content h1",
     "lvl2": ".content h2",
     "lvl3": ".content h3",
-    "content": ".content p"
+    "lvl4": ".content h4",
+    "lvl5": ".content h5",
+    "content": ".content li"
   },
   "selectors_exclude": [
     "aside",
