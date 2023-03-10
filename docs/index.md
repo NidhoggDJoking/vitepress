@@ -5,9 +5,9 @@ title: Vite & Vue Powered Static Site Generator
 titleTemplate: By NidhoggDJoking
 
 hero:
-  name: VitePress
-  text: Vite 和 Vue 支持的静态站点生成器
-  tagline: 简单、强大且高性能。满足您一直想要的现代 SSG 框架。
+  name: EGOIST
+  text: 路漫漫其修远兮
+  tagline: 长风破浪会有时,直挂云帆济沧海
   image:
     dark: /day_min.png
     light: /development_min.png
