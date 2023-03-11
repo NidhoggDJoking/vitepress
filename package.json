@@ -20,7 +20,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --open",
     "docs:dev": "vitepress dev docs",
     "bootstrap": "yarn || npm i",
     "docs:build": "vitepress build docs",
