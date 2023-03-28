@@ -17,7 +17,7 @@ onMounted(() =>
 
 onUnmounted(() => window.removeEventListener('scroll', onScrollFun))
 
-function ReturnToTop() {
+function returnToTopOld() {
   var timer = setInterval(function () {
     var oTop = document.body.scrollTop || document.documentElement.scrollTop
     if (oTop > 0) {
@@ -28,6 +28,14 @@ function ReturnToTop() {
     }
   }, 10)
 }
+
+function returnToTopNew(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 
 function onScrollFun() {
   var oTop = document.body.scrollTop || document.documentElement.scrollTop
@@ -44,7 +52,7 @@ function onScrollFun() {
   <Layout>
     <template #aside-outline-after>
       <Transition>
-        <div class="return2top" v-if="show" @click="ReturnToTop">
+        <div class="return2top" v-if="show" @click="returnToTopNew">
           <img src="/up.svg" alt="" />
         </div>
       </Transition>
