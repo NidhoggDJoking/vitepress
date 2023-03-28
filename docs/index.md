@@ -6,8 +6,8 @@ titleTemplate: By NidhoggDJoking
 
 hero:
   name: EGOIST
-  text: 路漫漫其修远兮
-  tagline: 长风破浪会有时,直挂云帆济沧海
+  text: 星が瞬くこんな夜に
+  tagline: Departures ~あなたにおくるアイの歌~
   image:
     dark: /day_min.png
     light: /development_min.png
