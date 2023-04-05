@@ -99,6 +99,8 @@ function sidebarNote() {
         { text: "Shell", link: "/note/shell" },
         { text: "Vite", link: "/note/vite" },
         { text: "Notification", link: "/note/window-notification" },
+        { text: "Essay", link: "/note/essay" },
+        { text: "Standard", link: "/note/standard" },
       ],
     },
     // {
@@ -113,7 +115,7 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "Logs", link: "/note/note" },
-        { text: "Vite import", link: "/note/error/vite-import" },
+        { text: "Vite", link: "/note/error/vite-import" },
         { text: "Mysql", link: "/note/error/mysql" },
         { text: "Algolia", link: "/note/error/algolia" },
       ],
