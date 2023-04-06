@@ -103,13 +103,6 @@ function sidebarNote() {
         { text: "Standard", link: "/note/standard" },
       ],
     },
-    // {
-    //   text: "Element",
-    //   collapsible: true,
-    //   items: [
-    //     { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
-    //   ],
-    // },
     {
       text: "Questions",
       collapsible: true,
@@ -125,6 +118,14 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "💯 JavaScript Questions", link: "/note/javascript-questions" },
+      ],
+    },
+    {
+      text: "Element",
+      collapsible: true,
+      items: [
+        { text: "Table", link: "/note/element/table" },
+        { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
       ],
     },
   ];
