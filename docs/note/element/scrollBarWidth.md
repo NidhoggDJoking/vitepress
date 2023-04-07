@@ -1,5 +1,4 @@
-
-- ## scrollBarWidth
+# scrollBarWidth
 
 参考`elementUI`获取滚动条宽度的方法
 

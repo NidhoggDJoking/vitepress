@@ -11,9 +11,8 @@ let README_File = fs.readFileSync(
     'utf8'
 );
 
-let mergeStr = `
----
-deep
+let mergeStr = `---
+outline: 'deep'
 ---
 
 ${README_File}
