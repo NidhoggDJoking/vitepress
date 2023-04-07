@@ -6,13 +6,21 @@
 const fs = require('fs');
 const path = require('path');
 
-var README_File = fs.readFileSync(
+let README_File = fs.readFileSync(
     path.resolve(__dirname, '../README.md'),
     'utf8'
 );
 
+let mergeStr = `
+---
+deep
+---
+
+${README_File}
+`
+
 fs.writeFile(
     path.resolve(__dirname, '../docs/note/vitepress.md'), 
-    README_File,
+    mergeStr,
     () => {}
 );
