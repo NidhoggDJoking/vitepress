@@ -1,3 +1,4 @@
+# Password book
 ## 开发环境
 
 | Projects | OrganizationID | UserName | Password |
@@ -14,7 +15,7 @@
 
 
 
-## 标注含义
+## 标注含义<Badge type="tip" text="计划安排文档里的翻译" />
 
 | emoji | describe |
 | ----- | :------: |

@@ -100,7 +100,6 @@ function sidebarNote() {
         { text: "Vite", link: "/note/vite" },
         { text: "Notification", link: "/note/window-notification" },
         { text: "Essay", link: "/note/essay" },
-        { text: "Standard", link: "/note/standard" },
       ],
     },
     {
@@ -139,8 +138,9 @@ function sidebarTools() {
         { text: "Emoji List", link: "/tools/emoji-list" },
         { text: "Javascript Function", link: "/tools/javascript-function" },
         { text: "Javascript Regular", link: "/tools/javascript-regular" },
-        { text: "Gitee Go", link: "/tools/gitee" },
+        { text: "Standard", link: "/tools/standard" },
         { text: "Links", link: "/tools/cipher" },
+        { text: "Gitee Go", link: "/tools/gitee" },
       ]
     },
     {
