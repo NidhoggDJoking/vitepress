@@ -43,6 +43,7 @@ outline: 'deep'
 
 
 
+
 ### `null` 和 `undefined`
 
 首先 `null` 和 `undefined` 都表示空，但是存在差异
@@ -427,7 +428,8 @@ function myNew(Con, ...args) {
 
 ### HTML5 语义化
 
-:::details ChatGDP:
+<collapse title='ChatGDP'>
+
 HTML5语义化是指通过HTML标签来表示页面内容的含义、结构和信息，让页面代码更具有可读性、可维护性和可访问性。在HTML5中，新增了很多语义化标签，如`<header>`、`<nav>`、`<footer>`、`<main>`、`<article>`、`<section>`、`<aside>`、等，可以用来表示页面中的头部、导航和底部等结构，而不仅是用`<div>`这样的通用容器标签进行布局。这样做有助于开发者更好地理解和维护自己的代码，同时也能提高网站的可访问性和SEO优化效果。
 
 HTML5语义化的优点包括：
@@ -438,9 +440,8 @@ HTML5语义化的优点包括：
 - 在没CSS样式的情况下，页面整体也会呈现很好的结构效果
 
 [1](https://en.wikipedia.org/wiki/HTML5)[2](https://www.w3schools.com/html/html5_semantic_elements.asp)
-:::
 
-
+</collapse>
 
 <style>
     ruby > span{

@@ -54,5 +54,3 @@ export default function() {
   height: 6px;
 }
 ```
-
-<player/>
