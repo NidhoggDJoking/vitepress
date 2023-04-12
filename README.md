@@ -111,6 +111,12 @@ https://[*.]local-credentialless.webcontainer.io
 https://[*.]local-corp.webcontainer.io
 ```
 
+### 使用 `codespaces` 在浏览器上编译运行
+
+```js
+"dev:codespace": "npm run dev -- --host 0.0.0.0"
+```
+
 <br>
 
 ### [Dependabot 版本更新自动更新依赖项](https://docs.github.com/zh/code-security/dependabot/dependabot-version-updates)
