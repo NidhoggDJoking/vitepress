@@ -100,6 +100,7 @@ function sidebarNote() {
         { text: "Vite", link: "/note/vite" },
         { text: "Notification", link: "/note/window-notification" },
         { text: "Essay", link: "/note/essay" },
+        { text: "Vue", link: "/note/vue" },
       ],
     },
     {
