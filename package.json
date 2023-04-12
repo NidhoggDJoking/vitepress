@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@docsearch/js": "^3.2.1",
+    "@vueuse/core": "^9.13.0",
     "lodash.debounce": "^4.0.8",
     "path": "^0.12.7"
   },
