@@ -101,6 +101,8 @@ function sidebarNote() {
         { text: "Notification", link: "/note/window-notification" },
         { text: "Essay", link: "/note/essay" },
         { text: "Vue", link: "/note/vue" },
+        { text: "React", link: "/note/react" },
+        { text: "Svelte", link: "/note/svelte" },
       ],
     },
     {
