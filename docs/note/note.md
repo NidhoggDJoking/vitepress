@@ -11,19 +11,28 @@ aside: false
 `SourceHanSansSC-Normal`
 
 
-<div ref="el" class="draggable" :style="style" style="position: fixed">
+<div v-if='!isMobile' ref="el" class="draggable" :style="style" style="position: fixed">
     🚧 useDraggable test
 </div>
 
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed  } from 'vue'
 import { useDraggable } from '@vueuse/core'
 
 const el = ref(null)
 
+const isMobile = computed(() => {
+  if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+        return true; // 移动端
+    } else {
+        return false; // PC端
+    }
+})
+
+
 const { x, y, style } = useDraggable(el, {
-  initialValue: { x: 330, y: 250 },
+  initialValue: { x: 330, y: 550 },
 })
 </script>
 
@@ -31,6 +40,8 @@ const { x, y, style } = useDraggable(el, {
 .draggable{
     padding: 10px;
     cursor: pointer;
+    user-select: none;
     background-color: var(--vp-c-bg);
+    z-index: 2;
 }
 </style>
