@@ -11,7 +11,7 @@ aside: false
 `SourceHanSansSC-Normal`
 
 
-<div ref="el" :style="style" style="position: fixed">
+<div ref="el" class="draggable" :style="style" style="position: fixed">
     🚧 useDraggable test
 </div>
 
@@ -26,3 +26,11 @@ const { x, y, style } = useDraggable(el, {
   initialValue: { x: 330, y: 250 },
 })
 </script>
+
+<style scoped>
+.draggable{
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--vp-c-bg);
+}
+</style>
