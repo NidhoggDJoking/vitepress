@@ -8,3 +8,52 @@ vue + elementui项目中使用`el-table在el-table-column`上使用`v-if`的时�
 ```html
 <el-table-column v-if="status ===  1" :key="Math.random()"></el-table-column>
 ```
+
+
+# `el-input`<Badge type="tip" text="show-password" />
+
+发生版本为`2.10.1`, 目前`2.15.13`已处理
+
+```vue
+<!-- 2.10.1 -->
+<el-input ref='input'  placeholder="请输入密码" v-model="value" show-password></el-input>
+```
+
+`show-password` 在切换过程input的聚焦位置由置后变身置前
+
+[问题复现](https://codepen.io/JokingLulu/pen/MWPpxQJ)
+
+
+
+低版本外部处理:
+
+```vue
+mounted () {
+    this.$watch(
+        () => {
+            return this.$refs.input.passwordVisible
+        },
+        (val) => {
+            this.$refs.input.blur();
+            this.$refs.input.focus();
+        }
+    )
+}
+```
+
+[在线查看代码](https://codepen.io/JokingLulu/pen/ZEqLROz)
+
+
+组件内部处理：
+
+```js
+// packages/input/scr/input.vue
+methods: {
+    focus() {
+        this.$nextTick(() => {
+            this.getInput().focus();
+        })
+    }
+}
+```
+
