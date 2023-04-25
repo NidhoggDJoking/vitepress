@@ -3,7 +3,7 @@ outline: 'deep'
 ---
 # React
 
-### `React Hooks`
+### React Hooks
 
 React Hooks 是React 16.8 版本中引入的新特性，它可以让你在 React 函数组件中使用状态(state) 和其他功能，使得代码更加简洁，可读性更好。以下是一些使用 React Hooks 的常见钩子 (Hooks)：
 
@@ -121,3 +121,120 @@ function Counter() {
 
 使用 `useReducer` 可以让我们更加清晰地管理状态和操作，优化组件结构，并且避免了一些常见的错误。
 :::
+
+
+
+### React Router DOM
+
+React Router DOM（原名为React Router v6）是一个用于构建单页应用（SPA）的路由库。以下是React Router DOM的一些常见用法：
+
+####  1. 导航到不同的页面：
+
+```js
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+  
+function App() {  
+  return (  
+    <Router>  
+      <Switch>  
+        <Route path="/" exact component={Home} />  
+        <Route path="/about" component={About} />  
+        <Route path="/contact" component={Contact} />  
+      </Switch>  
+    </Router>  
+  );  
+}
+
+```
+
+####  2. 导航到特定页面，根据条件过滤：
+
+
+
+```js
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+  
+function App() {  
+  return (  
+    <Router>  
+      <Switch>  
+        <Route path="/page/:id" component={(props) => <Page id={props.id} />} />  
+      </Switch>  
+    </Router>  
+  );  
+}
+
+```
+
+#### 3. 嵌套导航：
+
+```js
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+  
+function App() {  
+  return (  
+    <Router>  
+      <Switch>  
+        <Route path="/" exact component={Home} />  
+        <Route path="/about" component={About} />  
+        <Route path="/contact" component={Contact} />  
+        <Route path="/nested" component={Nested} />  
+      </Switch>  
+    </Router>  
+  );  
+}  
+  
+function Page({ id }) {  
+  return <div>Page {id}</div>;  
+}  
+  
+function Nested() {  
+  return <div>  
+    <Page id={1} />  
+    <Page id={2} />  
+  </div>;  
+}
+
+```
+
+####  4. 动态导航：
+
+```js
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+  
+function App() {  
+  return (  
+    <Router>  
+      <Switch>  
+        <Route path="/" exact component={Home} />  
+        <Route path="/about" component={About} />  
+        <Route path="/contact" component={Contact} />  
+        <Route path="/nested" component={Nested} />  
+        <Route path="/dynamic" component={Dynamic} />  
+      </Switch>  
+    </Router>  
+  );  
+}  
+  
+function Dynamic(props) {  
+  const [visible] = React.useState(false);  
+  
+  const toggle = () => {  
+    props.history.push({ name: 'Nested', path: '/nested' });  
+    props.history.push({ name: 'Dynamic', path: '/dynamic' });  
+    props.history.push({ name: 'Page', path: `${props.params.id}/page/${props.params.id}` });  
+    visible(!visible);  
+  };  
+  
+  return (  
+    <div>  
+      <button onClick={toggle}>Toggle Navigation</button>  
+      {visible && <div>Navigation is visible!</div>}  
+    </div>  
+  );  
+}
+```
+
+这些是React Router DOM的一些基本用法，可以帮助您快速构建单页应用。但是，React Router DOM还有许多其他功能和选项，可以根据您的需求进行自定义和扩展。
