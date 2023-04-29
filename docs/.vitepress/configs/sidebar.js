@@ -113,6 +113,7 @@ function sidebarNote() {
         { text: "Vite", link: "/note/error/vite-import" },
         { text: "Mysql", link: "/note/error/mysql" },
         { text: "Algolia", link: "/note/error/algolia" },
+        { text: "Element", link: "/note/error/element" },
       ],
     },
     {
@@ -120,14 +121,6 @@ function sidebarNote() {
       collapsible: true,
       items: [
         { text: "💯 JavaScript Questions", link: "/note/javascript-questions" },
-      ],
-    },
-    {
-      text: "Element",
-      collapsible: true,
-      items: [
-        { text: "Table", link: "/note/element/table" },
-        { text: "scrollBarWidth", link: "/note/element/scrollBarWidth" },
       ],
     },
   ];
