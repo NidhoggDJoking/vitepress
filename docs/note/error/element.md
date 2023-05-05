@@ -73,3 +73,49 @@ methods: {
 }
 ```
 
+不是用`show-password`实现
+
+```html
+<el-input
+    v-model="password.text"
+    :type="password.passwordType"
+    @focus="handlePasswordFocus"
+    onpaste="return false"
+    ><i 
+        slot="suffix"
+        :class="['iconfont', 
+        password.showPassword ? 'icondengluxianshimima' : 'icondenglubuxianshimima' ]"
+        @mousedown.stop="onshowPassword"
+        @mouseup.stop="onhiddenPassword"
+        @mouseout.stop="onhiddenPassword"
+    ></i>
+</el-input>
+<script>
+export default {
+    data() {
+        return {
+            password: {
+                text: '',
+                showPassword: false,
+                passwordType: 'password'
+            },
+        }
+    },
+    methods: {
+         onshowPassword() {
+            this.password.showPassword = true
+            this.password.passwordType = 'text'
+         },
+        onhiddenPassword() {
+            this.password.showPassword = false
+            this.password.passwordType = 'password'
+        },
+        handlePasswordFocus() {
+            this.password.passwordType = this.password.showPassword
+            ? 'text'
+            : 'password'
+        }
+    }
+}
+</script>
+```
