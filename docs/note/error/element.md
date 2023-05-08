@@ -81,10 +81,12 @@ methods: {
     :type="password.passwordType"
     @focus="handlePasswordFocus"
     onpaste="return false"
-    ><i 
+    ><i
         slot="suffix"
-        :class="['iconfont', 
-        password.showPassword ? 'icondengluxianshimima' : 'icondenglubuxianshimima' ]"
+        :class="['iconfont',
+        password.showPassword ?
+        'icondengluxianshimima' :
+        'icondenglubuxianshimima' ]"
         @mousedown.stop="onshowPassword"
         @mouseup.stop="onhiddenPassword"
         @mouseout.stop="onhiddenPassword"
