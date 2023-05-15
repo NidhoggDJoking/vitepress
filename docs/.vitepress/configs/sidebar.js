@@ -103,6 +103,7 @@ function sidebarNote() {
         { text: "Vue", link: "/note/vue" },
         { text: "React", link: "/note/react" },
         { text: "Svelte", link: "/note/svelte" },
+        { text: "Minio", link: "/note/minio" },
       ],
     },
     {
