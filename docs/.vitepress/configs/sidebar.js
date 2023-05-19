@@ -104,6 +104,7 @@ function sidebarNote() {
         { text: "React", link: "/note/react" },
         { text: "Svelte", link: "/note/svelte" },
         { text: "Minio", link: "/note/minio" },
+        { text: "Service Worker", link: "/note/service-worker" },
       ],
     },
     {
