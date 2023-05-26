@@ -23,3 +23,13 @@ navigator.getBattery().then(function (battery) {
   console.log('完全放电需要的时间: ' + dischargingTime)
 })
 ``
+
+> 兼容不行（Safari）!
+
+
+
+## `navigator.connection`
+
+[`Navigator.connection`](https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/connection) 只读属性返回一个包含有关系统网络连接信息的 `NetworkInformation` 对象
+
+兼容不行（Safari），数据网络带宽无参考价值，暂无（2023年）实际用途
