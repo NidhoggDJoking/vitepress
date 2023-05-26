@@ -105,6 +105,9 @@ function sidebarNote() {
         { text: "Svelte", link: "/note/svelte" },
         { text: "Minio", link: "/note/minio" },
         { text: "Service Worker", link: "/note/service-worker" },
+        { text: "Archives", link: "/note/archives" },
+        { text: "Navigator", link: "/note/navigator" },
+        { text: "mdn", link: "/note/mdn" },
       ],
     },
     {
