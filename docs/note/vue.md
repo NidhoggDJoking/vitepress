@@ -23,3 +23,9 @@ outline: 'deep'
 4.静态节点提取：`Vue3` 通过编译阶段对静态节点的分析，可以在运行时跳过对这些节点的处理，减少了不必要的计算。
 
 :::
+
+## 轮子
+
+[lodash](https://www.lodashjs.com/)
+
+[futil](https://smartprocure.github.io/futil-js/)
