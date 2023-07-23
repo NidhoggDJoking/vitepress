@@ -73,3 +73,60 @@ z // { a: 3, b: 4 }
 不禁感慨 如果是在上班时间我会不会写出和上述例子一样风格的代码，为了追求了工作的高效喜欢直接了当，渐渐地少了一丝对代码创作的追求。
 
 ---
+
+
+- ### js 提供了一个数组结构的 data，要求实现一个 query 方法，返回一个新的数组，query 方法内部有 过滤、排序、分组 等操作，并且支持链式调用，调用最终的 execute 方法返回结果
+
+
+```js
+class Query {
+  constructor(data) {
+    this.data = data;
+    this.result = data.slice();
+  }
+  
+  filter(callback) {
+    this.result = this.result.filter(callback);
+    return this; // 支持链式调用
+  }
+  
+  sort(compareFn) {
+    this.result = this.result.sort(compareFn);
+    return this; // 支持链式调用
+  }
+  
+  groupBy(key) {
+    const groups = {};
+    for (let item of this.result) {
+      const groupKey = item[key];
+      if (!groups[groupKey]) {
+        groups[groupKey] = [];
+      }
+      groups[groupKey].push(item);
+    }
+    this.result = Object.values(groups);
+    return this; // 支持链式调用
+  }
+  
+  execute() {
+    return this.result;
+  }
+}
+
+// 示例调用
+const data = [
+  { name: '张三', age: 20, gender: '男' },
+  { name: '李四', age: 25, gender: '女' },
+  { name: '王五', age: 22, gender: '男' },
+  { name: '赵六', age: 28, gender: '女' }
+];
+
+const result = new Query(data)
+  .filter(item => item.age >= 22)
+  .sort((a, b) => b.age - a.age)
+  .groupBy('gender')
+  .execute();
+
+console.log(result);
+
+```

@@ -39,8 +39,8 @@ features:
   # - icon:
   #     dark: /Snoopy.svg
   #     light: /Spongebob.svg
-  - title : 💋完全静态但仍然动态
-    details: 使用真正的 SSG + SPA 架构疯狂。页面加载时静态，但从那里以 100% 的交互性吸引用户。
+  - title : 💋Docsify：实例性案例
+    details: 使用Docsify-cli构建，更加偏向原生的书写感受，毫无限制，为所欲为。
 ---
 
 <style>
