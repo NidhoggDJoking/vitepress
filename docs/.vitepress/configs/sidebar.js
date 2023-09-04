@@ -108,6 +108,8 @@ function sidebarNote() {
         { text: "Archives", link: "/note/archives" },
         { text: "Navigator", link: "/note/navigator" },
         { text: "mdn", link: "/note/mdn" },
+        { text: 'lowcode', link: "/note/lowcode"},
+        { text: 'ready made', link: "/note/ready-made"},
       ],
     },
     {
