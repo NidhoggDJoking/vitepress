@@ -18,3 +18,8 @@ git config --global -l
 ```
 
 Failed to connect to github.com port 443 after 75002 ms: Couldn't connect to server
+
+
+
+(!1 + [])[+!![] + !![] + !![]] + ({}+[])[+!![] + +!![]]
+sb
