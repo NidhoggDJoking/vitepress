@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,a as l}from"./app.a4a68102.js";const i=JSON.parse('{"title":"插件汇总","description":"","frontmatter":{},"headers":[],"relativePath":"note/ready-made.md","lastUpdated":1693929347000}'),p={name:"note/ready-made.md"},o=l("",5),e=[o];function r(t,c,D,y,C,F){return n(),a("div",null,e)}const b=s(p,[["render",r]]);export{i as __pageData,b as default};
