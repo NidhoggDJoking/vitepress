@@ -48,3 +48,9 @@ const output = {
 merge(x, y) // => output
 ```
 :::
+
+
+```
+import throttle from 'throttle-debounce/throttle'
+
+```
