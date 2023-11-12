@@ -110,6 +110,7 @@ function sidebarNote() {
         { text: "mdn", link: "/note/mdn" },
         { text: 'lowcode', link: "/note/lowcode"},
         { text: 'ready made', link: "/note/ready-made"},
+        { text: 'Element layout', link: "/note/layout"},
       ],
     },
     {
