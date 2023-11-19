@@ -25,3 +25,5 @@ git push -f git@gitee.com:NidhoggDJoking/VitePress.git master:gh-pages
 cd -
 
 rm -rf docs/.vitepress/dist
+
+# 解决gitee 没有工作流/流水线 无法自动部署
