@@ -24,8 +24,4 @@ outline: 'deep'
 
 :::
 
-## 轮子
-
-[lodash](https://www.lodashjs.com/)
-
-[futil](https://smartprocure.github.io/futil-js/)
+对于一段固定的HTML Vue3不再生成虚拟DOM而是编译时转换成一段String

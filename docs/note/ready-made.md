@@ -54,3 +54,15 @@ merge(x, y) // => output
 import throttle from 'throttle-debounce/throttle'
 
 ```
+
+- ## vite-plugin-inspect
+
+Vite项目打包前后单文件内容对比
+
+
+
+## 轮子
+
+[lodash](https://www.lodashjs.com/)
+
+[futil](https://smartprocure.github.io/futil-js/)
