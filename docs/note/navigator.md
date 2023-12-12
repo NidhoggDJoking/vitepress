@@ -39,3 +39,7 @@ navigator.getBattery().then(function (battery) {
 ::: danger 兼容不行（Safari）
 数据网络带宽无参考价值，暂无（2022年）实际用途
 :::
+
+## `navigator.language()`
+
+获取当前浏览器设置的默认语音
