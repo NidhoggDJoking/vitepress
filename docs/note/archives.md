@@ -57,3 +57,16 @@ A = elliptical Arc 椭圆弧
 Z = closepath 闭合（从最后一个点连直线到起始点）
 
 使用大写字母表示绝对位置，小写字母表示相对位置（相对于起点的位置，向右向下为正）。
+
+
+
+
+NVM  淘宝源 替换
+
+nvm 包最外层节点
+settings.txt
+
+```
+node_mirror: https://npmmirror.com/mirrors/node/
+npm_mirror: https://npmmirror.com/mirrors/npm/
+```
