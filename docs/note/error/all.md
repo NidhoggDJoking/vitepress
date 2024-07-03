@@ -23,3 +23,24 @@ Failed to connect to github.com port 443 after 75002 ms: Couldn't connect to ser
 
 (!1 + [])[+!![] + !![] + !![]] + ({}+[])[+!![] + +!![]]
 sb
+
+
+
+
+git error - warning: templates not found /usr/local/git/share/git-core/templates
+
+在 Mac 上用 SourceTree 克隆 svn 的时候, 出现了 warning: templates not found /usr/local/git/share/git-core/templates 警告,导致克隆失败. 怎么办呢.
+
+在终端输入 
+
+sudo mkdir /usr/local/git
+
+sudo mkdir /usr/local/git/share
+
+sudo mkdir /usr/local/git/share/git-core
+
+sudo mkdir /usr/local/git/share/git-core/templates
+
+sudo chmod -R 755 /usr/local/git/share/git-core/templates
+
+前四条创建目录,最后一条给修改目录添加权限.
