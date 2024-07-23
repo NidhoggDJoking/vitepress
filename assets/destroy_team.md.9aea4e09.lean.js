@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,a as o}from"./app.1fdee1e8.js";const u=JSON.parse('{"title":"Object.groupBy()","description":"","frontmatter":{},"headers":[],"relativePath":"destroy/team.md","lastUpdated":1721716049000}'),p={name:"destroy/team.md"},l=o("",6),e=[l];function t(r,c,D,y,F,C){return a(),n("div",null,e)}const i=s(p,[["render",t]]);export{u as __pageData,i as default};
