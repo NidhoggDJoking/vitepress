@@ -1,6 +1,7 @@
 // 多个侧边栏方式sidebar写成对象
 export default {
   "/guide/": sidebarGuide(),
+  "/doc/": sidebarDoc(),
   "/config/": sidebarConfig(),
   "/note/": sidebarNote(),
   "/tools": sidebarTools(),
@@ -153,6 +154,17 @@ function sidebarTools() {
         {
           text: "Element Tool",  link: "/tools/element/tools"
         }
+      ]
+    }
+  ];
+}
+
+function sidebarDoc(){
+  return [
+    {
+      text: "Test",
+      items: [
+        { text: "Class", link: "/expand/class" },
       ]
     }
   ];
