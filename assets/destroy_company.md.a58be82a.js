@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.c38575c4.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"destroy/company.md","lastUpdated":1720423961000}'),o={name:"destroy/company.md"};function r(s,c,n,p,d,m){return t(),a("div")}const f=e(o,[["render",r]]);export{i as __pageData,f as default};
