@@ -44,3 +44,11 @@ sudo mkdir /usr/local/git/share/git-core/templates
 sudo chmod -R 755 /usr/local/git/share/git-core/templates
 
 前四条创建目录,最后一条给修改目录添加权限.
+
+
+
+remote: Support for password authentication was removed on August 13, 2021.
+
+
+
+git remote set-url origin https://<token>@github.com/<name>/仓库名
