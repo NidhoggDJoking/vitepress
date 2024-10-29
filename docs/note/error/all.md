@@ -52,3 +52,18 @@ remote: Support for password authentication was removed on August 13, 2021.
 
 
 git remote set-url origin https://<token>@github.com/<name>/仓库名
+
+
+
+## NVM
+
+NVM  淘宝源 替换
+
+nvm 包最外层节点
+settings.txt
+
+```
+node_mirror: https://npmmirror.com/mirrors/node/
+npm_mirror: https://npmmirror.com/mirrors/npm/
+```
+

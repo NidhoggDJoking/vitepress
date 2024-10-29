@@ -3,7 +3,7 @@ export default [
     { text: "📝 Note", link: "/note/vitepress", activeMatch: "/note/" },
     {
         text: '💎 Doc',
-        link: "/doc/class", activeMatch: "/doc/"
+        link: "/expand/class", activeMatch: "/expand/"
     },
     {
         text: "🌈 VitePress",
