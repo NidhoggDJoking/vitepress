@@ -67,3 +67,10 @@ node_mirror: https://npmmirror.com/mirrors/node/
 npm_mirror: https://npmmirror.com/mirrors/npm/
 ```
 
+
+处理git 文件名大小写问题
+
+```
+git config core.ignorecase false # 将repo设置为大小写敏感
+git config --list # 查看repo配置是否生效
+```
