@@ -1,0 +1,1 @@
+import{_ as t,o as d,c as e,a as o}from"./app.803988e9.js";const N=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/node-sass.md","lastUpdated":1759131168000}'),s={name:"note/node-sass.md"},r=o("",4),a=[r];function _(n,i,c,l,p,h){return d(),e("div",null,a)}const u=t(s,[["render",_]]);export{N as __pageData,u as default};

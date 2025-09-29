@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.803988e9.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"technology/cmd.md","lastUpdated":1701344216000}'),o={name:"technology/cmd.md"};function c(r,n,s,d,p,m){return t(),a("div")}const l=e(o,[["render",c]]);export{i as __pageData,l as default};

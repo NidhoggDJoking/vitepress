@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a,a as p}from"./app.803988e9.js";const m=JSON.parse('{"title":"琐事","description":"","frontmatter":{},"headers":[],"relativePath":"log/trivia.md","lastUpdated":1736264748000}'),r={name:"log/trivia.md"},_=p("",9),o=[_];function s(i,c,n,d,l,h){return e(),a("div",null,o)}const T=t(r,[["render",s]]);export{m as __pageData,T as default};

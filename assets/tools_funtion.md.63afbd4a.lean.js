@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.803988e9.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"tools/funtion.md","lastUpdated":1727683190000}'),e={name:"tools/funtion.md"},p=l("",1),o=[p];function r(t,c,i,u,b,C){return n(),a("div",null,o)}const d=s(e,[["render",r]]);export{m as __pageData,d as default};
