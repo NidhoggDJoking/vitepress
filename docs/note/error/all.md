@@ -17,16 +17,16 @@ git config --global https.version HTTP/1.1
 git config --global -l
 ```
 
+```
 Failed to connect to github.com port 443 after 75002 ms: Couldn't connect to server
-
-
 
 (!1 + [])[+!![] + !![] + !![]] + ({}+[])[+!![] + +!![]]
 sb
+```
 
 
 
-
+```bash
 git error - warning: templates not found /usr/local/git/share/git-core/templates
 
 在 Mac 上用 SourceTree 克隆 svn 的时候, 出现了 warning: templates not found /usr/local/git/share/git-core/templates 警告,导致克隆失败. 怎么办呢.
@@ -52,7 +52,7 @@ remote: Support for password authentication was removed on August 13, 2021.
 
 
 git remote set-url origin https://<token>@github.com/<name>/仓库名
-
+```
 
 
 ## NVM
