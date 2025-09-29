@@ -180,7 +180,6 @@ up:向上移动浏览
 
 九、Mail
 
-
 command N:建立新邮件
 command shift N:接受新邮件
 command option N:打开新窗口
@@ -190,3 +189,72 @@ command F:回复信息
 command shift R:回复全部信息
 command shift B:弹出发件人
 command shift T:转换信息，丰富文字或纯文本
+
+
+
+### MacPorts使用
+
+更新软件，-v参数，显示详细的更新过程。
+sudo port -v selfupdate
+
+搜索索引中的软件
+port search name
+
+安装软件
+sudo port install name
+
+安装完毕，清除安装时产生的临时文件
+sudo port clean --all name
+
+卸载软件
+sudo port uninstall name
+
+查看有更新的软件以及版本
+port outdated
+
+升级可以更新的软件
+sudo port upgrade outdated
+
+
+
+
+----
+
+
+
+ps aux|grep install 查看进程信息
+
+sudo kill xxxx   杀死进程
+
+使用 ls -a 显示当前目录下的所有文件（夹）（包含隐藏文件及文件夹）
+
+Mac zsh: permission denied  原因： 当前用户没有权限
+解决方法：添加权限（给文件或目录添加权限） sudo chmod u+x  
+u - 表示用户 (user) g - 表示用户组 (group) o - 表示其它 (others) a - 表示所有 (all)
+
+touch命令用于修改文件或者目录的时间属性，包括访问时间和修改时间，若文件不存在，系统会建立一个新的文件。
+
+        touch [-acfm][-d<日期时间>][-r<参考文件或目录>] [-t<日期时间>][--help][--version][文件或目录…]
+
+
+.bash_配置文件
+
+# Setting PATH For Python 2.7
+PATH = "/usr/local/bin:${PATH}"
+export PATH
+
+#Setting PATH for Python 3.2
+PATH ="/System/Library/Frameworks/Python.framework/Versions/3.2/bin:${PATH}"
+export PATH
+
+#Setting PATH for Python 3.4
+PATH = "/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+
+
+sourcetree 'git status' failed with code -1:''
+
+首先我们简单理解Rosetta（翻译指令） 就是一个把 Intel 架构设计的 app程序x86指令转换为能在M1芯片上运行的软件系统。
+
+softwareupdate --install-rosetta  安装rosetta2
